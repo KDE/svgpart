@@ -39,6 +39,7 @@ protected:
 	virtual bool openFile();
 
 private Q_SLOTS:
+	void zoomActualSize();
 	void zoomIn();
 	void zoomOut();
 

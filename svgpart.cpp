@@ -45,6 +45,7 @@ SvgPart::SvgPart(QWidget* parentWidget, QObject* parent, const QStringList&)
 	mItem = 0;
 	setWidget(mView);
 
+	KStandardAction::actualSize(this, SLOT(zoomActualSize()), actionCollection());
 	KStandardAction::zoomIn(this, SLOT(zoomIn()), actionCollection());
 	KStandardAction::zoomOut(this, SLOT(zoomOut()), actionCollection());
 	setXMLFile("svgpart/svgpart.rc");
@@ -75,6 +76,11 @@ void SvgPart::zoomIn() {
 
 void SvgPart::zoomOut() {
 	setZoom(zoom() / 2);
+}
+
+
+void SvgPart::zoomActualSize() {
+	setZoom(1.0);
 }
 
 
