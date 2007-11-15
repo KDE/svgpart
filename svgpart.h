@@ -24,7 +24,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 class KAboutData;
 
-class QSvgWidget;
+class QGraphicsScene;
+class QGraphicsSvgItem;
+class QGraphicsView;
 
 class SvgPart : public KParts::ReadOnlyPart {
 	Q_OBJECT
@@ -37,7 +39,9 @@ protected:
 	virtual bool openFile();
 
 private:
-	QSvgWidget* mSvgWidget;
+	QGraphicsScene* mScene;
+	QGraphicsView* mView;
+	QGraphicsSvgItem* mItem;
 };
 
 #endif /* SVGPART_H */

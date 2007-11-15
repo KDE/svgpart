@@ -19,7 +19,10 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "svgpart.moc"
 
 // Qt
-#include <QSvgWidget>
+#include <QGraphicsScene>
+#include <QGraphicsSvgItem>
+#include <QGraphicsView>
+#include <QSvgRenderer>
 
 // KDE
 #include <kparts/genericfactory.h>
@@ -34,14 +37,19 @@ K_EXPORT_COMPONENT_FACTORY( svgpart /*library name*/, SvgPartFactory )
 SvgPart::SvgPart(QWidget* parentWidget, QObject* parent, const QStringList&)
 : KParts::ReadOnlyPart(parent)
 {
-	mSvgWidget = new QSvgWidget(parentWidget);
-	setWidget(mSvgWidget);
+	mScene = new QGraphicsScene(this);
+	mView = new QGraphicsView(mScene, parentWidget);
+	mView->setDragMode(QGraphicsView::ScrollHandDrag);
+	mItem = 0;
+	setWidget(mView);
 	setXMLFile("svgpart/svgpart.rc");
 }
 
 
 bool SvgPart::openFile() {
-	mSvgWidget->load(localFilePath());
+	delete mItem;
+	mItem = new QGraphicsSvgItem(localFilePath());
+	mScene->addItem(mItem);
 	return true;
 }
 
