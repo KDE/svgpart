@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Service
+Name=Svg Part
+MimeType=image/svg+xml;
+ServiceTypes=KParts/ReadOnlyPart
+X-KDE-Library=svgpart
+InitialPreference=12
+Icon=svg
