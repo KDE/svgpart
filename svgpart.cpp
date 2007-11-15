@@ -25,6 +25,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include <QSvgRenderer>
 
 // KDE
+#include <kactioncollection.h>
+#include <kstandardaction.h>
 #include <kparts/genericfactory.h>
 
 // Local
@@ -42,6 +44,9 @@ SvgPart::SvgPart(QWidget* parentWidget, QObject* parent, const QStringList&)
 	mView->setDragMode(QGraphicsView::ScrollHandDrag);
 	mItem = 0;
 	setWidget(mView);
+
+	KStandardAction::zoomIn(this, SLOT(zoomIn()), actionCollection());
+	KStandardAction::zoomOut(this, SLOT(zoomOut()), actionCollection());
 	setXMLFile("svgpart/svgpart.rc");
 }
 
@@ -60,4 +65,26 @@ KAboutData* SvgPart::createAboutData() {
 		KAboutData::License_GPL,
 		ki18n("Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"));
 	return aboutData;
+}
+
+
+void SvgPart::zoomIn() {
+	setZoom(zoom() * 2);
+}
+
+
+void SvgPart::zoomOut() {
+	setZoom(zoom() / 2);
+}
+
+
+qreal SvgPart::zoom() const {
+	return mView->matrix().m11();
+}
+
+
+void SvgPart::setZoom(qreal value) {
+	QMatrix matrix;
+	matrix.scale(value, value);
+	mView->setMatrix(matrix);
 }

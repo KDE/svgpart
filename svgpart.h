@@ -38,10 +38,17 @@ public:
 protected:
 	virtual bool openFile();
 
+private Q_SLOTS:
+	void zoomIn();
+	void zoomOut();
+
 private:
 	QGraphicsScene* mScene;
 	QGraphicsView* mView;
 	QGraphicsSvgItem* mItem;
+
+	qreal zoom() const;
+	void setZoom(qreal);
 };
 
 #endif /* SVGPART_H */
