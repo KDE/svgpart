@@ -2,6 +2,14 @@
 Encoding=UTF-8
 Type=Service
 Name=Svg Part
+Name[de]=Svg-Komponente
+Name[eo]=Svg komponanto
+Name[et]=Svg komponent
+Name[ja]=SVG パート
+Name[pt]=Componente de SVG
+Name[pt_BR]=Componente de SVG
+Name[sv]=SVG-delprogram
+Name[zh_TW]=Svg 部件
 MimeType=image/svg+xml;
 ServiceTypes=KParts/ReadOnlyPart
 X-KDE-Library=svgpart
