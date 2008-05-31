@@ -22,7 +22,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 // KDE
 #include <kparts/part.h>
 
-class KAboutData;
 class KSvgRenderer;
 
 class QGraphicsScene;
@@ -32,9 +31,7 @@ class QGraphicsView;
 class SvgPart : public KParts::ReadOnlyPart {
 	Q_OBJECT
 public:
-	SvgPart(QWidget* parentWidget, QObject* parent, const QStringList&);
-
-	static KAboutData* createAboutData();
+	SvgPart(QWidget* parentWidget, QObject* parent, const QVariantList&);
 
 protected:
 	virtual bool openFile();

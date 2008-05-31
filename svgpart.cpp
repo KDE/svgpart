@@ -24,19 +24,29 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include <QGraphicsView>
 
 // KDE
+#include <kaboutdata.h>
 #include <kactioncollection.h>
+#include <kgenericfactory.h>
 #include <kstandardaction.h>
 #include <ksvgrenderer.h>
-#include <kparts/genericfactory.h>
 
 // Local
 
+static KAboutData createAboutData()
+{
+	KAboutData aboutData( "svgpart", 0, ki18n("SVG Part"),
+		"1.0", ki18n("A KPart to display SVG images"),
+		KAboutData::License_GPL,
+		ki18n("Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"));
+	return aboutData;
+}
+
 //Factory Code
-typedef KParts::GenericFactory<SvgPart> SvgPartFactory;
-K_EXPORT_COMPONENT_FACTORY( svgpart /*library name*/, SvgPartFactory )
+K_PLUGIN_FACTORY( SvgPartFactory, registerPlugin< SvgPart >(); )
+K_EXPORT_PLUGIN( SvgPartFactory( createAboutData() ) )
 
 
-SvgPart::SvgPart(QWidget* parentWidget, QObject* parent, const QStringList&)
+SvgPart::SvgPart(QWidget* parentWidget, QObject* parent, const QVariantList&)
 : KParts::ReadOnlyPart(parent)
 {
 	mRenderer = new KSvgRenderer(this);
@@ -62,15 +72,6 @@ bool SvgPart::openFile() {
 	mItem->setSharedRenderer(mRenderer);
 	mScene->addItem(mItem);
 	return true;
-}
-
-
-KAboutData* SvgPart::createAboutData() {
-	KAboutData* aboutData = new KAboutData( "svgpart", 0, ki18n("SVG Part"),
-		"1.0", ki18n("A KPart to display SVG images"),
-		KAboutData::License_GPL,
-		ki18n("Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"));
-	return aboutData;
 }
 
 
