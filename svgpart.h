@@ -33,6 +33,8 @@ class SvgPart : public KParts::ReadOnlyPart {
 public:
 	SvgPart(QWidget* parentWidget, QObject* parent, const QVariantList&);
 
+	virtual bool closeUrl();
+
 protected:
 	virtual bool openFile();
 

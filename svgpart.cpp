@@ -64,7 +64,6 @@ SvgPart::SvgPart(QWidget* parentWidget, QObject* parent, const QVariantList&)
 
 
 bool SvgPart::openFile() {
-	delete mItem;
 	if (!mRenderer->load(localFilePath())) {
 		return false;
 	}
@@ -72,6 +71,13 @@ bool SvgPart::openFile() {
 	mItem->setSharedRenderer(mRenderer);
 	mScene->addItem(mItem);
 	return true;
+}
+
+
+bool SvgPart::closeUrl() {
+	delete mItem;
+	mItem = 0;
+	return KParts::ReadOnlyPart::closeUrl();
 }
 
 
