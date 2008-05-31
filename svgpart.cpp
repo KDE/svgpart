@@ -26,6 +26,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 // KDE
 #include <kactioncollection.h>
 #include <kstandardaction.h>
+#include <ksvgrenderer.h>
 #include <kparts/genericfactory.h>
 
 // Local
@@ -38,6 +39,7 @@ K_EXPORT_COMPONENT_FACTORY( svgpart /*library name*/, SvgPartFactory )
 SvgPart::SvgPart(QWidget* parentWidget, QObject* parent, const QStringList&)
 : KParts::ReadOnlyPart(parent)
 {
+	mRenderer = new KSvgRenderer(this);
 	mScene = new QGraphicsScene(this);
 	mView = new QGraphicsView(mScene, parentWidget);
 	mView->setDragMode(QGraphicsView::ScrollHandDrag);
@@ -53,7 +55,11 @@ SvgPart::SvgPart(QWidget* parentWidget, QObject* parent, const QStringList&)
 
 bool SvgPart::openFile() {
 	delete mItem;
-	mItem = new QGraphicsSvgItem(localFilePath());
+	if (!mRenderer->load(localFilePath())) {
+		return false;
+	}
+	mItem = new QGraphicsSvgItem();
+	mItem->setSharedRenderer(mRenderer);
 	mScene->addItem(mItem);
 	return true;
 }

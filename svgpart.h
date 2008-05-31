@@ -23,6 +23,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include <kparts/part.h>
 
 class KAboutData;
+class KSvgRenderer;
 
 class QGraphicsScene;
 class QGraphicsSvgItem;
@@ -47,6 +48,7 @@ private:
 	QGraphicsScene* mScene;
 	QGraphicsView* mView;
 	QGraphicsSvgItem* mItem;
+	KSvgRenderer* mRenderer;
 
 	qreal zoom() const;
 	void setZoom(qreal);
