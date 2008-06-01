@@ -39,4 +39,4 @@ MimeType=image/svg+xml;image/svg+xml-compressed;
 ServiceTypes=KParts/ReadOnlyPart
 X-KDE-Library=svgpart
 InitialPreference=12
-Icon=svg
+Icon=image-svg+xml
