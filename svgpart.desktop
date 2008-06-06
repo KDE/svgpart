@@ -2,6 +2,7 @@
 Encoding=UTF-8
 Type=Service
 Name=Svg Part
+Name[cs]=SVG komponenta
 Name[de]=Svg-Komponente
 Name[el]=Τμήμα Svg
 Name[eo]=Svg komponanto
