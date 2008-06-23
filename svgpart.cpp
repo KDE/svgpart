@@ -52,6 +52,7 @@ SvgPart::SvgPart(QWidget* parentWidget, QObject* parent, const QVariantList&)
 	mRenderer = new KSvgRenderer(this);
 	mScene = new QGraphicsScene(this);
 	mView = new QGraphicsView(mScene, parentWidget);
+	mView->setFrameStyle(QFrame::NoFrame);
 	mView->setDragMode(QGraphicsView::ScrollHandDrag);
 	mItem = 0;
 	setWidget(mView);
