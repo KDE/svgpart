@@ -1,7 +1,7 @@
 <!DOCTYPE kpartgui>
 <kpartgui name="SvgPart" version="2">
 <MenuBar>
-	<Menu name="view"><Text>&amp;View</Text>
+	<Menu name="view"><text>&amp;View</text>
 		<Action name="view_actual_size"/>
 <!--
 		<Action name="view_zoom_to_fit"/>
