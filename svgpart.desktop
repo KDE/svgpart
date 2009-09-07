@@ -2,6 +2,7 @@
 Type=Service
 Name=Svg Part
 Name[ar]=جزء Svg
+Name[bg]=Модул за Svg
 Name[cs]=SVG komponenta
 Name[de]=SVG-Komponente
 Name[el]=Τμήμα Svg
