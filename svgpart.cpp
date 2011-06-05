@@ -22,13 +22,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include <QGraphicsScene>
 #include <QGraphicsSvgItem>
 #include <QGraphicsView>
+#include <QSvgRenderer>
 
 // KDE
 #include <kaboutdata.h>
 #include <kactioncollection.h>
 #include <kgenericfactory.h>
 #include <kstandardaction.h>
-#include <ksvgrenderer.h>
 
 // Local
 
@@ -49,7 +49,7 @@ K_EXPORT_PLUGIN( SvgPartFactory( createAboutData() ) )
 SvgPart::SvgPart(QWidget* parentWidget, QObject* parent, const QVariantList&)
 : KParts::ReadOnlyPart(parent)
 {
-	mRenderer = new KSvgRenderer(this);
+	mRenderer = new QSvgRenderer(this);
 	mScene = new QGraphicsScene(this);
 	mView = new QGraphicsView(mScene, parentWidget);
 	mView->setFrameStyle(QFrame::NoFrame);

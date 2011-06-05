@@ -22,11 +22,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 // KDE
 #include <kparts/part.h>
 
-class KSvgRenderer;
 
 class QGraphicsScene;
 class QGraphicsSvgItem;
 class QGraphicsView;
+class QSvgRenderer;
 
 class SvgPart : public KParts::ReadOnlyPart {
 	Q_OBJECT
@@ -47,7 +47,7 @@ private:
 	QGraphicsScene* mScene;
 	QGraphicsView* mView;
 	QGraphicsSvgItem* mItem;
-	KSvgRenderer* mRenderer;
+	QSvgRenderer* mRenderer;
 
 	qreal zoom() const;
 	void setZoom(qreal);
