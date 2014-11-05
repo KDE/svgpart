@@ -16,7 +16,6 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 */
-#include "svgpart.moc"
 
 // Qt
 #include <QGraphicsScene>
@@ -26,24 +25,25 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 // KDE
 #include <kaboutdata.h>
+#include <klocalizedstring.h>
 #include <kactioncollection.h>
-#include <kgenericfactory.h>
 #include <kstandardaction.h>
+#include <kpluginfactory.h>
 
 // Local
+#include "svgpart.h"
 
 static KAboutData createAboutData()
 {
-	KAboutData aboutData( "svgpart", 0, ki18n("SVG Part"),
-		"1.0", ki18n("A KPart to display SVG images"),
-		KAboutData::License_GPL,
-		ki18n("Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"));
+	KAboutData aboutData( QStringLiteral("svgpart"), i18n("SVG Part"),
+		"1.0", i18n("A KPart to display SVG images"),
+		KAboutLicense::KAboutLicense::GPL,
+		i18n("Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"));
 	return aboutData;
 }
 
 //Factory Code
 K_PLUGIN_FACTORY( SvgPartFactory, registerPlugin< SvgPart >(); )
-K_EXPORT_PLUGIN( SvgPartFactory( createAboutData() ) )
 
 
 SvgPart::SvgPart(QWidget* parentWidget, QObject* parent, const QVariantList&)
@@ -60,7 +60,8 @@ SvgPart::SvgPart(QWidget* parentWidget, QObject* parent, const QVariantList&)
 	KStandardAction::actualSize(this, SLOT(zoomActualSize()), actionCollection());
 	KStandardAction::zoomIn(this, SLOT(zoomIn()), actionCollection());
 	KStandardAction::zoomOut(this, SLOT(zoomOut()), actionCollection());
-	setXMLFile("svgpart/svgpart.rc");
+	setComponentName(QLatin1Literal("svgpart"), i18n("SVG Part"));
+	setXMLFile("svgpart.rc");
 }
 
 
@@ -107,3 +108,5 @@ void SvgPart::setZoom(qreal value) {
 	matrix.scale(value, value);
 	mView->setMatrix(matrix);
 }
+
+#include "svgpart.moc"
