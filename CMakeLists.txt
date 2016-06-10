@@ -12,7 +12,7 @@ include(KDECompilerSettings)
 include(FeatureSummary)
 
 find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Widgets Svg)
-find_package(KF5 REQUIRED COMPONENTS CoreAddons Parts XmlGui)
+find_package(KF5 REQUIRED COMPONENTS CoreAddons Parts)
 
 add_definitions(-DTRANSLATION_DOMAIN="svgpart")
 
@@ -22,7 +22,7 @@ set(svgpart_SRCS
 
 add_library(svgpart MODULE ${svgpart_SRCS})
 
-target_link_libraries(svgpart Qt5::Widgets Qt5::Svg KF5::CoreAddons KF5::Parts KF5::XmlGui)
+target_link_libraries(svgpart Qt5::Widgets Qt5::Svg KF5::CoreAddons KF5::Parts)
 
 install(TARGETS svgpart DESTINATION ${PLUGIN_INSTALL_DIR})
 install(FILES svgpart.desktop DESTINATION ${SERVICES_INSTALL_DIR})
