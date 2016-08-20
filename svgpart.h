@@ -20,7 +20,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #define SVGPART_H
 
 // KDE
-#include <kparts/part.h>
+#include <kparts/readonlypart.h>
 
 
 class QGraphicsScene;
@@ -36,7 +36,7 @@ public:
 	virtual bool closeUrl();
 
 protected:
-	virtual bool openFile();
+	virtual bool openFile() Q_DECL_OVERRIDE;
 
 private Q_SLOTS:
 	void zoomActualSize();
