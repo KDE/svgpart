@@ -49,6 +49,8 @@ K_PLUGIN_FACTORY( SvgPartFactory, registerPlugin< SvgPart >(); )
 SvgPart::SvgPart(QWidget* parentWidget, QObject* parent, const QVariantList&)
 : KParts::ReadOnlyPart(parent)
 {
+	setComponentData(createAboutData());
+
 	mRenderer = new QSvgRenderer(this);
 	mScene = new QGraphicsScene(this);
 	mView = new QGraphicsView(mScene, parentWidget);
@@ -60,7 +62,6 @@ SvgPart::SvgPart(QWidget* parentWidget, QObject* parent, const QVariantList&)
 	KStandardAction::actualSize(this, SLOT(zoomActualSize()), actionCollection());
 	KStandardAction::zoomIn(this, SLOT(zoomIn()), actionCollection());
 	KStandardAction::zoomOut(this, SLOT(zoomOut()), actionCollection());
-	setComponentName(QLatin1Literal("svgpart"), i18n("SVG Part"));
 	setXMLFile("svgpart.rc");
 }
 
