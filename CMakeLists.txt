@@ -17,8 +17,8 @@ find_package(KF5 REQUIRED COMPONENTS CoreAddons Parts)
 add_definitions(-DTRANSLATION_DOMAIN="svgpart")
 
 set(svgpart_SRCS
-	svgpart.cpp
-	)
+    svgpart.cpp
+)
 
 add_library(svgpart MODULE ${svgpart_SRCS})
 

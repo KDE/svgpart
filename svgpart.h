@@ -14,43 +14,45 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-
 */
+
 #ifndef SVGPART_H
 #define SVGPART_H
 
 // KDE
 #include <kparts/readonlypart.h>
 
-
 class QGraphicsScene;
 class QGraphicsSvgItem;
 class QGraphicsView;
 class QSvgRenderer;
 
-class SvgPart : public KParts::ReadOnlyPart {
-	Q_OBJECT
-public:
-	SvgPart(QWidget* parentWidget, QObject* parent, const QVariantList&);
+class SvgPart : public KParts::ReadOnlyPart
+{
+    Q_OBJECT
 
-	virtual bool closeUrl();
+public:
+    SvgPart(QWidget* parentWidget, QObject* parent, const QVariantList&);
+
+    virtual bool closeUrl();
 
 protected:
-	virtual bool openFile() Q_DECL_OVERRIDE;
+    virtual bool openFile();
 
 private Q_SLOTS:
-	void zoomActualSize();
-	void zoomIn();
-	void zoomOut();
+    void zoomActualSize();
+    void zoomIn();
+    void zoomOut();
 
 private:
-	QGraphicsScene* mScene;
-	QGraphicsView* mView;
-	QGraphicsSvgItem* mItem;
-	QSvgRenderer* mRenderer;
+    qreal zoom() const;
+    void setZoom(qreal value);
 
-	qreal zoom() const;
-	void setZoom(qreal);
+private:
+    QGraphicsScene* mScene;
+    QGraphicsView* mView;
+    QGraphicsSvgItem* mItem;
+    QSvgRenderer* mRenderer;
 };
 
 #endif /* SVGPART_H */
