@@ -1,9 +1,10 @@
 cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
 project(svgpart)
 
-set(QT_MIN_VERSION "5.2.0")
+set(QT_MIN_VERSION "5.5.0")
+set(KF_MIN_VERSION "5.18.0")
 
-find_package(ECM 1.0.0 REQUIRED NO_MODULE)
+find_package(ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
 
 include(KDEInstallDirs)
@@ -12,7 +13,7 @@ include(KDECompilerSettings NO_POLICY_SCOPE)
 include(FeatureSummary)
 
 find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Widgets Svg)
-find_package(KF5 REQUIRED COMPONENTS CoreAddons Parts)
+find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS CoreAddons Parts)
 
 add_definitions(-DTRANSLATION_DOMAIN="svgpart")
 
