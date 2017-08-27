@@ -25,8 +25,8 @@ add_library(svgpart MODULE ${svgpart_SRCS})
 
 target_link_libraries(svgpart Qt5::Widgets Qt5::Svg KF5::CoreAddons KF5::Parts)
 
-install(TARGETS svgpart DESTINATION ${PLUGIN_INSTALL_DIR})
-install(FILES svgpart.desktop DESTINATION ${SERVICES_INSTALL_DIR})
-install(FILES svgpart.rc DESTINATION ${KXMLGUI_INSTALL_DIR}/svgpart)
+install(TARGETS svgpart DESTINATION ${KDE_INSTALL_PLUGINDIR})
+install(FILES svgpart.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR})
+install(FILES svgpart.rc DESTINATION ${KDE_INSTALL_KXMLGUI5DIR}/svgpart)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
