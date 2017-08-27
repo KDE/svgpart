@@ -47,6 +47,7 @@ K_PLUGIN_FACTORY(SvgPartFactory, registerPlugin<SvgPart>();)
 
 SvgPart::SvgPart(QWidget* parentWidget, QObject* parent, const QVariantList&)
     : KParts::ReadOnlyPart(parent)
+    , mItem(nullptr)
 {
     setComponentData(createAboutData());
 
@@ -55,7 +56,6 @@ SvgPart::SvgPart(QWidget* parentWidget, QObject* parent, const QVariantList&)
     mView = new QGraphicsView(mScene, parentWidget);
     mView->setFrameStyle(QFrame::NoFrame);
     mView->setDragMode(QGraphicsView::ScrollHandDrag);
-    mItem = nullptr;
     setWidget(mView);
 
     KStandardAction::actualSize(this, SLOT(zoomActualSize()), actionCollection());
@@ -73,14 +73,23 @@ bool SvgPart::openFile()
     mItem = new QGraphicsSvgItem();
     mItem->setSharedRenderer(mRenderer);
     mScene->addItem(mItem);
+    // we reuse the scene, whose scenerect though is not properly resetable, so ensure up-to-date one
+    mScene->setSceneRect(mItem->boundingRect());
     return true;
 }
 
 
 bool SvgPart::closeUrl()
 {
+    mView->resetMatrix();
+    mView->resetTransform();
+    // cannot reset the rect completely, as a null QRectF is ignored
+    // so at least just a 1 pixel square one
+    mScene->setSceneRect(QRectF(0,0,1,1));
+
     delete mItem;
     mItem = nullptr;
+
     return KParts::ReadOnlyPart::closeUrl();
 }
 
