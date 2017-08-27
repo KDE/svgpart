@@ -55,7 +55,7 @@ SvgPart::SvgPart(QWidget* parentWidget, QObject* parent, const QVariantList&)
     mView = new QGraphicsView(mScene, parentWidget);
     mView->setFrameStyle(QFrame::NoFrame);
     mView->setDragMode(QGraphicsView::ScrollHandDrag);
-    mItem = 0;
+    mItem = nullptr;
     setWidget(mView);
 
     KStandardAction::actualSize(this, SLOT(zoomActualSize()), actionCollection());
@@ -80,7 +80,7 @@ bool SvgPart::openFile()
 bool SvgPart::closeUrl()
 {
     delete mItem;
-    mItem = 0;
+    mItem = nullptr;
     return KParts::ReadOnlyPart::closeUrl();
 }
 
