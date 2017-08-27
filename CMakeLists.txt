@@ -8,7 +8,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_D
 
 include(KDEInstallDirs)
 include(KDECMakeSettings)
-include(KDECompilerSettings)
+include(KDECompilerSettings NO_POLICY_SCOPE)
 include(FeatureSummary)
 
 find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Widgets Svg)
