@@ -30,6 +30,7 @@ add_definitions(
 add_definitions(-DTRANSLATION_DOMAIN="svgpart")
 
 set(svgpart_SRCS
+    svgbrowserextension.cpp
     svgpart.cpp
 )
 
