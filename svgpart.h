@@ -34,10 +34,10 @@ class SvgPart : public KParts::ReadOnlyPart
 public:
     SvgPart(QWidget* parentWidget, QObject* parent, const QVariantList&);
 
-    virtual bool closeUrl();
+    bool closeUrl() override;
 
 protected:
-    virtual bool openFile();
+    bool openFile() override;
 
 private Q_SLOTS:
     void zoomActualSize();
