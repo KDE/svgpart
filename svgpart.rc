@@ -1,5 +1,5 @@
 <!DOCTYPE gui SYSTEM "kpartgui.dtd">
-<gui name="SvgPart" version="2">
+<gui name="SvgPart" version="2" translationDomain="svgpart">
 <MenuBar>
     <Menu name="view"><text>&amp;View</text>
         <Action name="view_actual_size"/>
