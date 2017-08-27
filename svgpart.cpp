@@ -16,21 +16,21 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
+#include "svgpart.h"
+
+// KF
+#include <KAboutData>
+#include <KLocalizedString>
+#include <KActionCollection>
+#include <KStandardAction>
+#include <KPluginFactory>
+
 // Qt
 #include <QGraphicsScene>
 #include <QGraphicsSvgItem>
 #include <QGraphicsView>
 #include <QSvgRenderer>
 
-// KDE
-#include <kaboutdata.h>
-#include <klocalizedstring.h>
-#include <kactioncollection.h>
-#include <kstandardaction.h>
-#include <kpluginfactory.h>
-
-// Local
-#include "svgpart.h"
 
 static KAboutData createAboutData()
 {
