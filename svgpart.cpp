@@ -35,7 +35,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 static KAboutData createAboutData()
 {
     KAboutData aboutData(QStringLiteral("svgpart"), i18n("SVG Part"),
-                         "1.0", i18n("A KPart to display SVG images"),
+                         QStringLiteral("1.0"),
+                         i18n("A KPart to display SVG images"),
                          KAboutLicense::KAboutLicense::GPL,
                          i18n("Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"));
     return aboutData;
@@ -61,7 +62,7 @@ SvgPart::SvgPart(QWidget* parentWidget, QObject* parent, const QVariantList&)
     KStandardAction::actualSize(this, SLOT(zoomActualSize()), actionCollection());
     KStandardAction::zoomIn(this, SLOT(zoomIn()), actionCollection());
     KStandardAction::zoomOut(this, SLOT(zoomOut()), actionCollection());
-    setXMLFile("svgpart.rc");
+    setXMLFile(QStringLiteral("svgpart.rc"));
 }
 
 
