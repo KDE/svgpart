@@ -40,7 +40,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 static KAboutData createAboutData()
 {
     KAboutData aboutData(QStringLiteral("svgpart"), i18n("SVG Part"),
-                         QStringLiteral("1.0"),
+                         QStringLiteral("1.1"),
                          i18n("A KPart to display SVG images"),
                          KAboutLicense::KAboutLicense::GPL,
                          i18n("Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"));
