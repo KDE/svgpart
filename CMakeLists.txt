@@ -29,6 +29,7 @@ set(svgpart_SRCS
 )
 
 add_library(svgpart MODULE ${svgpart_SRCS})
+kcoreaddons_desktop_to_json(svgpart svgpart.desktop)
 
 target_link_libraries(svgpart Qt5::Widgets Qt5::Svg KF5::CoreAddons KF5::Parts)
 

@@ -48,7 +48,8 @@ static KAboutData createAboutData()
 }
 
 //Factory Code
-K_PLUGIN_FACTORY(SvgPartFactory, registerPlugin<SvgPart>();)
+K_PLUGIN_FACTORY_WITH_JSON(SvgPartFactory, "svgpart.json",
+                           registerPlugin<SvgPart>();)
 
 
 SvgPart::SvgPart(QWidget* parentWidget, QObject* parent, const QVariantList&)
