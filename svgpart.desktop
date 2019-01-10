@@ -61,6 +61,6 @@ Name[zh_CN]=Svg 组件
 Name[zh_TW]=Svg 部件
 MimeType=image/svg+xml;image/svg+xml-compressed;
 ServiceTypes=KParts/ReadOnlyPart
-X-KDE-Library=svgpart
+X-KDE-Library=kf5/parts/svgpart
 InitialPreference=12
 Icon=image-svg+xml
