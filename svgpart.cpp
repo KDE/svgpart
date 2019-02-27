@@ -147,7 +147,6 @@ bool SvgPart::closeUrl()
         mPreviousVerticalScrollPosition = mView->verticalScrollBar()->value();
     }
 
-    mView->resetMatrix();
     mView->resetTransform();
     // cannot reset the rect completely, as a null QRectF is ignored
     // so at least just a 1 pixel square one
@@ -236,9 +235,9 @@ qreal SvgPart::zoom() const
 
 void SvgPart::setZoom(qreal value)
 {
-    QMatrix matrix;
+    QTransform matrix;
     matrix.scale(value, value);
-    mView->setMatrix(matrix);
+    mView->setTransform(matrix);
 }
 
 int SvgPart::horizontalScrollPosition() const
