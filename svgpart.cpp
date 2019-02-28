@@ -66,9 +66,9 @@ SvgPart::SvgPart(QWidget* parentWidget, QObject* parent, const QVariantList&)
     mView->setDragMode(QGraphicsView::ScrollHandDrag);
     setWidget(mView);
 
-    KStandardAction::actualSize(this, SLOT(zoomActualSize()), actionCollection());
-    KStandardAction::zoomIn(this, SLOT(zoomIn()), actionCollection());
-    KStandardAction::zoomOut(this, SLOT(zoomOut()), actionCollection());
+    KStandardAction::actualSize(this, &SvgPart::zoomActualSize, actionCollection());
+    KStandardAction::zoomIn(this, &SvgPart::zoomIn, actionCollection());
+    KStandardAction::zoomOut(this, &SvgPart::zoomOut, actionCollection());
     setXMLFile(QStringLiteral("svgpart.rc"));
 }
 
