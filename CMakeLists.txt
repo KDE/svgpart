@@ -16,10 +16,11 @@ find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Widgets Svg)
 find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS CoreAddons Parts)
 
 add_definitions(
-    -DQT_DEPRECATED_WARNINGS
-    -DQT_DISABLE_DEPRECATED_BEFORE=0x050900
     -DQT_NO_URL_CAST_FROM_STRING
 )
+if (EXISTS "${CMAKE_SOURCE_DIR}/.git")
+   add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x060000)
+endif()
 
 add_definitions(-DTRANSLATION_DOMAIN="svgpart")
 
