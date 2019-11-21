@@ -187,7 +187,7 @@ void SvgPart::delayedRestoreViewState()
     qreal zoomValue = mHasExtendedRestoreArguments ? mRestoreZoom : 1.0;
 
     // reloading same url?
-    // we can't tell if caller has explicitely set xOffset/yOffset of OpenUrlArguments
+    // we can't tell if caller has explicitly set xOffset/yOffset of OpenUrlArguments
     // so in case of same url we just assume a reload and ignore the OpenUrlArguments xOffset/yOffset
     if (!mHasExtendedRestoreArguments && (url() == mPreviousUrl)) {
         // restore last view state instead
