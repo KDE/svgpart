@@ -32,6 +32,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include <QGraphicsSvgItem>
 #include <QGraphicsView>
 #include <QSvgRenderer>
+#include <QTransform>
 #include <QMimeDatabase>
 #include <QScrollBar>
 #include <QTimer>
@@ -229,7 +230,7 @@ void SvgPart::zoomActualSize()
 
 qreal SvgPart::zoom() const
 {
-    return mView->matrix().m11();
+    return mView->transform().m11();
 }
 
 
