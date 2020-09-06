@@ -39,4 +39,6 @@ target_link_libraries(svgpart Qt5::Widgets Qt5::Svg KF5::CoreAddons KF5::Parts)
 install(TARGETS svgpart DESTINATION ${KDE_INSTALL_PLUGINDIR}/kf5/parts)
 install(FILES svgpart.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR})
 
+ki18n_install(po)
+
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
