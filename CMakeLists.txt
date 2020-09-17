@@ -1,5 +1,16 @@
-cmake_minimum_required(VERSION 3.0)
-project(svgpart)
+cmake_minimum_required(VERSION 3.5)
+
+# Release Service version, managed by release script
+set (RELEASE_SERVICE_VERSION_MAJOR "20")
+set (RELEASE_SERVICE_VERSION_MINOR "11")
+set (RELEASE_SERVICE_VERSION_MICRO "70")
+set (RELEASE_SERVICE_COMPACT_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}${RELEASE_SERVICE_VERSION_MINOR}${RELEASE_SERVICE_VERSION_MICRO}")
+
+# Bump SVGPART_BASE_VERSION once new features are added
+set(SVGPART_BASE_VERSION "1.1")
+set(SVGPART_VERSION "${SVGPART_BASE_VERSION}.${RELEASE_SERVICE_COMPACT_VERSION}")
+
+project(svgpart VERSION ${SVGPART_VERSION})
 
 set(QT_MIN_VERSION "5.9.0")
 set(KF_MIN_VERSION "5.53.0")
@@ -10,6 +21,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ECM_MODULE_PATH})
 include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
+include(ECMSetupVersion)
 include(FeatureSummary)
 
 find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Widgets Svg)
@@ -21,6 +33,11 @@ add_definitions(
 
 
 add_definitions(-DTRANSLATION_DOMAIN="svgpart")
+
+ecm_setup_version(${SVGPART_VERSION}
+    VARIABLE_PREFIX SVGPART
+    VERSION_HEADER svgpart_version.h
+)
 
 set(svgpart_SRCS
     svgbrowserextension.cpp

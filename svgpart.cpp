@@ -19,6 +19,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include "svgpart.h"
 
 #include "svgbrowserextension.h"
+#include "svgpart_version.h"
 
 // KF
 #include <KAboutData>
@@ -41,7 +42,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 static KAboutData createAboutData()
 {
     KAboutData aboutData(QStringLiteral("svgpart"), i18n("SVG Part"),
-                         QStringLiteral("1.1"),
+                         QStringLiteral(SVGPART_VERSION_STRING),
                          i18n("A KPart to display SVG images"),
                          KAboutLicense::KAboutLicense::GPL,
                          i18n("Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"));
