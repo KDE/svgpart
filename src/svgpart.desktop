@@ -60,8 +60,16 @@ Name[vi]=Phần nhúng đọc SVG
 Name[x-test]=xxSvg Partxx
 Name[zh_CN]=Svg 组件
 Name[zh_TW]=Svg 部件
+Comment=A KPart to display SVG images
 MimeType=image/svg+xml;image/svg+xml-compressed;
 ServiceTypes=KParts/ReadOnlyPart
 X-KDE-Library=kf5/parts/svgpart
 InitialPreference=12
 Icon=image-svg+xml
+
+X-KDE-PluginInfo-Name=svgpart
+X-KDE-PluginInfo-Version=@svgpart_VERSION@
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-Copyright=Copyright 2007 Aurélien Gâteau
+X-KDE-PluginInfo-Author=Aurélien Gâteau
+X-KDE-PluginInfo-Email=aurelien.gateau@free.fr
