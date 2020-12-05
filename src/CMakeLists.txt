@@ -8,7 +8,7 @@ if(${KF5_VERSION} VERSION_LESS 5.77.0)
     )
 endif()
 
-configure_file(svgpart.desktop ${CMAKE_CURRENT_BINARY_DIR}/svgpart.desktop @ONLY)
+configure_file(svgpart.desktop.in ${CMAKE_CURRENT_BINARY_DIR}/svgpart.desktop @ONLY)
 
 set(svgpart_SRCS
     svgbrowserextension.cpp
