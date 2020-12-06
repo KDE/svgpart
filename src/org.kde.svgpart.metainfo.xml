@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component type="addon">
+  <id>org.kde.svgpart</id>
+  <!--
+    Appstream model currently does not support the idea of generic addons
+    See https://github.com/ximion/appstream/issues/157
+    As intermediate work-around some typical consumers are listed explicitely.
+  -->
+  <extends>org.kde.ark.desktop</extends>
+  <extends>org.kde.kate.desktop</extends>
+  <extends>org.kde.kdevelop.desktop</extends>
+  <extends>org.kde.krusader.desktop</extends>
+  <extends>org.kde.konqueror.desktop</extends>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>SVG Viewer KPart</name>
+  <summary>Rendered display of SVG files in KParts-using software</summary>
+  <description>
+    <p>The SVG Viewer KPart allows KParts-using software to display SVG files in a rendered view.</p>
+  </description>
+  <url type="homepage">https://commits.kde.org/svgpart</url>
+  <url type="donation">https://www.kde.org/community/donations/?app=svgpart</url>
+  <update_contact>kossebau_at_kde.org</update_contact>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://cdn.kde.org/screenshots/svgpart/svgpart.png</image>
+    </screenshot>
+  </screenshots>
+  <project_group>KDE</project_group>
+  <categories>
+    <category>Graphics</category>
+  </categories>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="1.1.20120" date="2020-12-10"/>
+  </releases>
+</component>
