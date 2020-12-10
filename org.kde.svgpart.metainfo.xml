@@ -15,23 +15,29 @@
   <project_license>GPL-2.0+</project_license>
   <name>SVG Viewer KPart</name>
   <name xml:lang="ca">KPart del visor de SVG</name>
+  <name xml:lang="ca-valencia">KPart del visor de SVG</name>
   <name xml:lang="es">KPart del visor SVG</name>
   <name xml:lang="nl">SVG-viewer KPart</name>
+  <name xml:lang="nn">KPart-framvisar for SVG</name>
   <name xml:lang="sv">SVG KPart-visning</name>
   <name xml:lang="uk">KPart для перегляду SVG</name>
   <name xml:lang="x-test">xxSVG Viewer KPartxx</name>
   <summary>Rendered display of SVG files in KParts-using software</summary>
   <summary xml:lang="ca">Mostra renderitzats els fitxers SVG en el programari que utilitza les KParts</summary>
+  <summary xml:lang="ca-valencia">Mostra renderitzats els fitxers SVG en el programari que utilitza les KParts</summary>
   <summary xml:lang="es">Visualización renderizada de archivos SVG para software que usa KParts</summary>
   <summary xml:lang="nl">Toonbare weergave van SVG-bestanden in software die KParts gebruikt</summary>
+  <summary xml:lang="nn">Vising av SVG-filer i program som støttar KPart</summary>
   <summary xml:lang="sv">Återgiven vy för SVG-filer i programvara som använder KParts</summary>
   <summary xml:lang="uk">Показ обробленого вмісту файлів SVG у програмному забезпеченні із підтримкою KParts</summary>
   <summary xml:lang="x-test">xxRendered display of SVG files in KParts-using softwarexx</summary>
   <description>
     <p>The SVG Viewer KPart allows KParts-using software to display SVG files in a rendered view.</p>
     <p xml:lang="ca">La KPart del visor de SVG permet que el programari que utilitza les KParts, mostri els fitxers SVG en una vista renderitzada.</p>
+    <p xml:lang="ca-valencia">La KPart del visor de SVG permet que el programari que utilitza les KParts, mostre els fitxers SVG en una vista renderitzada.</p>
     <p xml:lang="es">El KPart del visor SVG permite al software que usa KParts mostrar archivos SVG en una vista renderizada.</p>
     <p xml:lang="nl">De SVG-viewer van KPart stelt software die KParts gebruikt in staat SVG-bestanden in een toonbare weergave te tonen.</p>
+    <p xml:lang="nn">KPart-framvisaren for SVG lèt deg visa filer SVG-format i alle program som støttar KPart.</p>
     <p xml:lang="sv">SVG KPart-visning tillåter program som använder KParts att visa filer med SVG-format i en återgiven vy.</p>
     <p xml:lang="uk">Модуль перегляду даних SVG надає змогу переглядати оброблений вміст файлів SVG у будь-якому програмному забезпеченні із підтримкою KParts.</p>
     <p xml:lang="x-test">xxThe SVG Viewer KPart allows KParts-using software to display SVG files in a rendered view.xx</p>
