@@ -79,4 +79,7 @@
     <category>Graphics</category>
   </categories>
   <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="1.1.20121" date="2021-01-07"/>
+  </releases>
 </component>
