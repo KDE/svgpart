@@ -63,6 +63,7 @@ Name[zh_TW]=Svg 部件
 Comment=A KPart to display SVG images
 Comment[ca]=Una KPart per a visualitzar imatges SVG
 Comment[ca@valencia]=Una KPart per a visualitzar imatges SVG
+Comment[de]=Eine KPart-Komponente zur Anzeige von SVG-Grafiken
 Comment[en_GB]=A KPart to display SVG images
 Comment[es]=KPart para mostrar imágenes SVG
 Comment[et]=KPart SVG-piltide näitamiseks
