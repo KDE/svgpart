@@ -25,6 +25,7 @@
   <name xml:lang="it">Visore KPart SVG</name>
   <name xml:lang="nl">SVG-viewer KPart</name>
   <name xml:lang="nn">KPart-framvisar for SVG</name>
+  <name xml:lang="pl">KPart przeglądarki SVG</name>
   <name xml:lang="pt">KPart de Visualização de SVG</name>
   <name xml:lang="pt-BR">KPart do visualizador de SVG</name>
   <name xml:lang="sk">KPart SVG prehliadača</name>
@@ -44,6 +45,7 @@
   <summary xml:lang="it">Visualizzazione renderizzata dei file SVG nel software che utilizza KParts</summary>
   <summary xml:lang="nl">Toonbare weergave van SVG-bestanden in software die KParts gebruikt</summary>
   <summary xml:lang="nn">Vising av SVG-filer i program som støttar KPart</summary>
+  <summary xml:lang="pl">Wyświetlanie plików SVG w oprogramowaniu używającym KPartów</summary>
   <summary xml:lang="pt">Visualização de ficheiros de desenhos SVG nas aplicações que usam o KParts</summary>
   <summary xml:lang="pt-BR">Exibição renderizada de arquivos SVG nos aplicativos que usam o KParts</summary>
   <summary xml:lang="sl">Preglednik SVG KPart omogoča prikaz SVG datotek z uporabo KParts.</summary>
@@ -62,6 +64,7 @@
     <p xml:lang="it">Il visore KPart SVG consente al software che utilizza KPart di visualizzare i file SVG in una vista renderizzata.</p>
     <p xml:lang="nl">De SVG-viewer van KPart stelt software die KParts gebruikt in staat SVG-bestanden in een toonbare weergave te tonen.</p>
     <p xml:lang="nn">KPart-framvisaren for SVG lèt deg visa filer SVG-format i alle program som støttar KPart.</p>
+    <p xml:lang="pl">KPart przeglądarki SVG umożliwia oprogramowaniu, używającemu KPartów na wyświetlanie plików SVG jako widoki.</p>
     <p xml:lang="pt">O KPart de Visualização de SVG permite às aplicações que usam o KParts apresentarem os ficheiros SVG numa área respectiva.</p>
     <p xml:lang="pt-BR">O KPart do visualizador de SVG permite que os aplicativos que usam o KParts mostrem o arquivo SVG renderizado.</p>
     <p xml:lang="sl">Preglednik SVG KPart omogoča programski opremi, ki uporablja KParts, za prikaz upodobitve datotek SVG.</p>
