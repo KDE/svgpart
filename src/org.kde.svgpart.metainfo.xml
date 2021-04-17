@@ -17,6 +17,7 @@
   <name xml:lang="ca">KPart del visor de SVG</name>
   <name xml:lang="ca-valencia">KPart del visor de SVG</name>
   <name xml:lang="cs">KPart pro prohlížení souborů SVG</name>
+  <name xml:lang="de">SVG-Betrachter-KPart</name>
   <name xml:lang="en-GB">SVG Viewer KPart</name>
   <name xml:lang="es">KPart del visor SVG</name>
   <name xml:lang="eu">SVG erakusle KPart</name>
@@ -37,6 +38,7 @@
   <summary xml:lang="ca">Mostra renderitzats els fitxers SVG en el programari que utilitza les KParts</summary>
   <summary xml:lang="ca-valencia">Mostra renderitzats els fitxers SVG en el programari que utilitza les KParts</summary>
   <summary xml:lang="cs">Zpracované zobrazení SVG v aplikacích využívajících KParts</summary>
+  <summary xml:lang="de">Anzeige von SVG-Dateien in Software, die KParts verwendet</summary>
   <summary xml:lang="en-GB">Rendered display of SVG files in KParts-using software</summary>
   <summary xml:lang="es">Visualización renderizada de archivos SVG para software que usa KParts</summary>
   <summary xml:lang="eu">KPart darabilten softwareei SVG fitxategiak errendatuta azaltzea</summary>
@@ -56,6 +58,7 @@
     <p>The SVG Viewer KPart allows KParts-using software to display SVG files in a rendered view.</p>
     <p xml:lang="ca">La KPart del visor de SVG permet que el programari que utilitza les KParts, mostri els fitxers SVG en una vista renderitzada.</p>
     <p xml:lang="ca-valencia">La KPart del visor de SVG permet que el programari que utilitza les KParts, mostre els fitxers SVG en una vista renderitzada.</p>
+    <p xml:lang="de">Die SVG-Betrachter-Komponente befähigt Software, die KParts verwendet, zur Anzeige von Dateien im SVG-Format.</p>
     <p xml:lang="en-GB">The SVG Viewer KPart allows KParts-using software to display SVG files in a rendered view.</p>
     <p xml:lang="es">El KPart del visor SVG permite al software que usa KParts mostrar archivos SVG en una vista renderizada.</p>
     <p xml:lang="eu">SVG erakusle KPart-ek KPart darabilten softwareei SVG fitxategiak errendatutako ikuspegian azaltzen aukera eskaintzen die.</p>
