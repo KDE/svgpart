@@ -24,7 +24,7 @@ include(KDECompilerSettings NO_POLICY_SCOPE)
 include(FeatureSummary)
 
 find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Widgets Svg)
-find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS CoreAddons Parts)
+find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS CoreAddons Parts I18n)
 
 add_definitions(
     -DQT_NO_CAST_TO_ASCII
