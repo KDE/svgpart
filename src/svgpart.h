@@ -23,11 +23,7 @@ class SvgPart : public KParts::ReadOnlyPart
     Q_OBJECT
 
 public:
-#if KCOREADDONS_VERSION >= QT_VERSION_CHECK(5, 77, 0)
     SvgPart(QWidget* parentWidget, QObject* parent, const KPluginMetaData& metaData, const QVariantList&);
-#else
-    SvgPart(QWidget* parentWidget, QObject* parent, const QVariantList&);
-#endif
 
     bool openUrl(const QUrl& url) override;
     bool closeUrl() override;

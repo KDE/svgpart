@@ -7,15 +7,8 @@
 #include "svgpart.h"
 
 #include "svgbrowserextension.h"
-#if KCOREADDONS_VERSION < QT_VERSION_CHECK(5, 77, 0)
-#include "svgpart_version.h"
-#endif
 // KF
-#if KCOREADDONS_VERSION >= QT_VERSION_CHECK(5, 77, 0)
 #include <KPluginMetaData>
-#else
-#include <KAboutData>
-#endif
 #include <KLocalizedString>
 #include <KActionCollection>
 #include <KStandardAction>
@@ -31,38 +24,18 @@
 #include <QScrollBar>
 #include <QTimer>
 
-#if KCOREADDONS_VERSION < QT_VERSION_CHECK(5, 77, 0)
-static KAboutData createAboutData()
-{
-    KAboutData aboutData(QStringLiteral("svgpart"), i18n("SVG Part"),
-                         QStringLiteral(SVGPART_VERSION_STRING),
-                         i18n("A KPart to display SVG images"),
-                         KAboutLicense::KAboutLicense::GPL,
-                         i18n("Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"));
-    return aboutData;
-}
-#endif
-
 //Factory Code
 K_PLUGIN_FACTORY_WITH_JSON(SvgPartFactory, "svgpart.json",
                            registerPlugin<SvgPart>();)
 
 
 SvgPart::SvgPart(QWidget* parentWidget, QObject* parent,
-#if KCOREADDONS_VERSION >= QT_VERSION_CHECK(5, 77, 0)
                  const KPluginMetaData& metaData, const QVariantList&)
-#else
-                 const QVariantList&)
-#endif
     : KParts::ReadOnlyPart(parent)
     , mItem(nullptr)
     , m_browserExtension(new SvgBrowserExtension(this))
 {
-#if KCOREADDONS_VERSION >= QT_VERSION_CHECK(5, 77, 0)
     setMetaData(metaData);
-#else
-    setComponentData(createAboutData());
-#endif
 
     mRenderer = new QSvgRenderer(this);
     mScene = new QGraphicsScene(this);

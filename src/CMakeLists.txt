@@ -1,13 +1,5 @@
 add_definitions(-DTRANSLATION_DOMAIN="svgpart")
 
-if(${KF5_VERSION} VERSION_LESS 5.77.0)
-    include(ECMSetupVersion)
-    ecm_setup_version(${SVGPART_VERSION}
-        VARIABLE_PREFIX SVGPART
-        VERSION_HEADER svgpart_version.h
-    )
-endif()
-
 configure_file(svgpart.desktop.in ${CMAKE_CURRENT_BINARY_DIR}/svgpart.desktop @ONLY)
 
 set(svgpart_SRCS
