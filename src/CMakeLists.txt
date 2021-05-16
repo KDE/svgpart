@@ -2,19 +2,24 @@ add_definitions(-DTRANSLATION_DOMAIN="svgpart")
 
 configure_file(svgpart.desktop.in ${CMAKE_CURRENT_BINARY_DIR}/svgpart.desktop @ONLY)
 
-set(svgpart_SRCS
+add_library(svgpart MODULE)
+
+target_sources(svgpart PRIVATE
     svgbrowserextension.cpp
     svgpart.cpp
-)
 
-qt5_add_resources(svgpart_SRCS
     svgpart.qrc
 )
 
-add_library(svgpart MODULE ${svgpart_SRCS})
 kcoreaddons_desktop_to_json(svgpart ${CMAKE_CURRENT_BINARY_DIR}/svgpart.desktop)
 
-target_link_libraries(svgpart Qt5::Widgets Qt5::Svg KF5::CoreAddons KF5::Parts KF5::I18n)
+target_link_libraries(svgpart
+    KF5::CoreAddons
+    KF5::Parts
+    KF5::I18n
+    Qt5::Widgets
+    Qt5::Svg
+)
 
 install(TARGETS svgpart DESTINATION ${KDE_INSTALL_PLUGINDIR}/kf5/parts)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/svgpart.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR})
