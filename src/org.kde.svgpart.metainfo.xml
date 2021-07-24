@@ -14,6 +14,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
   <name>SVG Viewer KPart</name>
+  <name xml:lang="ar">جزء ك عارض صور اس في جي</name>
   <name xml:lang="ca">KPart del visor de SVG</name>
   <name xml:lang="ca-valencia">KPart del visor de SVG</name>
   <name xml:lang="cs">KPart pro prohlížení souborů SVG</name>
@@ -40,6 +41,7 @@
   <name xml:lang="uk">KPart для перегляду SVG</name>
   <name xml:lang="x-test">xxSVG Viewer KPartxx</name>
   <summary>Rendered display of SVG files in KParts-using software</summary>
+  <summary xml:lang="ar">يستعرض صور اس في جي SVG في التطبيقات التي تستخدم جزء ك</summary>
   <summary xml:lang="ca">Mostra renderitzats els fitxers SVG en el programari que utilitza les KParts</summary>
   <summary xml:lang="ca-valencia">Mostra renderitzats els fitxers SVG en el programari que utilitza les KParts</summary>
   <summary xml:lang="cs">Zpracované zobrazení SVG v aplikacích využívajících KParts</summary>
@@ -67,6 +69,7 @@
   <summary xml:lang="x-test">xxRendered display of SVG files in KParts-using softwarexx</summary>
   <description>
     <p>The SVG Viewer KPart allows KParts-using software to display SVG files in a rendered view.</p>
+    <p xml:lang="ar">عارض صور اس في جي يمكن التطبيقات التي تستخدم جزء ك لعرض ملفات اس في جي.</p>
     <p xml:lang="ca">La KPart del visor de SVG permet que el programari que utilitza les KParts, mostri els fitxers SVG en una vista renderitzada.</p>
     <p xml:lang="ca-valencia">La KPart del visor de SVG permet que el programari que utilitza les KParts, mostre els fitxers SVG en una vista renderitzada.</p>
     <p xml:lang="de">Die SVG-Betrachter-Komponente befähigt Software, die KParts verwendet, zur Anzeige von Dateien im SVG-Format.</p>
