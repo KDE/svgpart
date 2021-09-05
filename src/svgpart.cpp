@@ -8,29 +8,26 @@
 
 #include "svgbrowserextension.h"
 // KF
-#include <KPluginMetaData>
-#include <KLocalizedString>
 #include <KActionCollection>
-#include <KStandardAction>
+#include <KLocalizedString>
 #include <KPluginFactory>
+#include <KPluginMetaData>
+#include <KStandardAction>
 
 // Qt
 #include <QGraphicsScene>
 #include <QGraphicsSvgItem>
 #include <QGraphicsView>
-#include <QSvgRenderer>
-#include <QTransform>
 #include <QMimeDatabase>
 #include <QScrollBar>
+#include <QSvgRenderer>
 #include <QTimer>
+#include <QTransform>
 
-//Factory Code
-K_PLUGIN_FACTORY_WITH_JSON(SvgPartFactory, "svgpart.json",
-                           registerPlugin<SvgPart>();)
+// Factory Code
+K_PLUGIN_FACTORY_WITH_JSON(SvgPartFactory, "svgpart.json", registerPlugin<SvgPart>();)
 
-
-SvgPart::SvgPart(QWidget* parentWidget, QObject* parent,
-                 const KPluginMetaData& metaData, const QVariantList&)
+SvgPart::SvgPart(QWidget *parentWidget, QObject *parent, const KPluginMetaData &metaData, const QVariantList &)
     : KParts::ReadOnlyPart(parent)
     , mItem(nullptr)
     , m_browserExtension(new SvgBrowserExtension(this))
@@ -50,8 +47,7 @@ SvgPart::SvgPart(QWidget* parentWidget, QObject* parent,
     setXMLFile(QStringLiteral("svgpart.rc"));
 }
 
-
-bool SvgPart::openUrl(const QUrl& url)
+bool SvgPart::openUrl(const QUrl &url)
 {
     mCloseUrlFromOpen = true;
 
@@ -61,7 +57,6 @@ bool SvgPart::openUrl(const QUrl& url)
 
     return success;
 }
-
 
 bool SvgPart::openFile()
 {
@@ -74,13 +69,11 @@ bool SvgPart::openFile()
     return true;
 }
 
-
-bool SvgPart::doOpenStream(const QString& mimeType)
+bool SvgPart::doOpenStream(const QString &mimeType)
 {
     auto mime = QMimeDatabase().mimeTypeForName(mimeType);
-    if (!mime.inherits(QStringLiteral("image/svg+xml"))
-        && !mime.inherits(QStringLiteral("image/svg+xml-compressed"))) {
-            return false;
+    if (!mime.inherits(QStringLiteral("image/svg+xml")) && !mime.inherits(QStringLiteral("image/svg+xml-compressed"))) {
+        return false;
     }
 
     mStreamedData.clear();
@@ -88,13 +81,11 @@ bool SvgPart::doOpenStream(const QString& mimeType)
     return true;
 }
 
-
-bool SvgPart::doWriteStream(const QByteArray& data)
+bool SvgPart::doWriteStream(const QByteArray &data)
 {
     mStreamedData.append(data);
     return true;
 }
-
 
 bool SvgPart::doCloseStream()
 {
@@ -110,7 +101,6 @@ bool SvgPart::doCloseStream()
 
     return true;
 }
-
 
 bool SvgPart::closeUrl()
 {
@@ -128,7 +118,7 @@ bool SvgPart::closeUrl()
     mView->resetTransform();
     // cannot reset the rect completely, as a null QRectF is ignored
     // so at least just a 1 pixel square one
-    mScene->setSceneRect(QRectF(0,0,1,1));
+    mScene->setSceneRect(QRectF(0, 0, 1, 1));
 
     delete mItem;
     mItem = nullptr;
@@ -140,7 +130,6 @@ bool SvgPart::closeUrl()
 
     return KParts::ReadOnlyPart::closeUrl();
 }
-
 
 void SvgPart::createViewForDocument()
 {
@@ -192,24 +181,20 @@ void SvgPart::zoomIn()
     setZoom(zoom() * 2);
 }
 
-
 void SvgPart::zoomOut()
 {
     setZoom(zoom() / 2);
 }
-
 
 void SvgPart::zoomActualSize()
 {
     setZoom(1.0);
 }
 
-
 qreal SvgPart::zoom() const
 {
     return mView->transform().m11();
 }
-
 
 void SvgPart::setZoom(qreal value)
 {
@@ -223,11 +208,9 @@ int SvgPart::horizontalScrollPosition() const
     return mView->horizontalScrollBar()->value();
 }
 
-
 int SvgPart::verticalScrollPosition() const
 {
     return mView->verticalScrollBar()->value();
 }
-
 
 #include "svgpart.moc"

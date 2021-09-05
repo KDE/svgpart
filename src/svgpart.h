@@ -23,9 +23,9 @@ class SvgPart : public KParts::ReadOnlyPart
     Q_OBJECT
 
 public:
-    SvgPart(QWidget* parentWidget, QObject* parent, const KPluginMetaData& metaData, const QVariantList&);
+    SvgPart(QWidget *parentWidget, QObject *parent, const KPluginMetaData &metaData, const QVariantList &);
 
-    bool openUrl(const QUrl& url) override;
+    bool openUrl(const QUrl &url) override;
     bool closeUrl() override;
 
     void setExtendedRestoreArguments(qreal zoom);
@@ -36,8 +36,8 @@ public:
 
 protected:
     bool openFile() override;
-    bool doOpenStream(const QString& mimeType) override;
-    bool doWriteStream(const QByteArray& data) override;
+    bool doOpenStream(const QString &mimeType) override;
+    bool doWriteStream(const QByteArray &data) override;
     bool doCloseStream() override;
 
 private Q_SLOTS:
@@ -53,12 +53,12 @@ private:
     void createViewForDocument();
 
 private:
-    QGraphicsScene* mScene;
-    QGraphicsView* mView;
-    QGraphicsSvgItem* mItem;
-    QSvgRenderer* mRenderer;
+    QGraphicsScene *mScene;
+    QGraphicsView *mView;
+    QGraphicsSvgItem *mItem;
+    QSvgRenderer *mRenderer;
 
-    SvgBrowserExtension* m_browserExtension;
+    SvgBrowserExtension *m_browserExtension;
 
     bool mCloseUrlFromOpen = false;
 

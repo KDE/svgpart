@@ -17,16 +17,16 @@ class SvgBrowserExtension : public KParts::BrowserExtension
     Q_OBJECT
 
 public:
-    explicit SvgBrowserExtension(SvgPart* part);
+    explicit SvgBrowserExtension(SvgPart *part);
 
     int xOffset() override;
     int yOffset() override;
 
-    void saveState(QDataStream& stream) override;
-    void restoreState(QDataStream& stream) override;
+    void saveState(QDataStream &stream) override;
+    void restoreState(QDataStream &stream) override;
 
 private:
-    SvgPart* m_part;
+    SvgPart *m_part;
 };
 
 #endif
