@@ -40,6 +40,7 @@
   <name xml:lang="sv">SVG KPart-visning</name>
   <name xml:lang="tr">SVG Görüntüleyici KPart</name>
   <name xml:lang="uk">KPart для перегляду SVG</name>
+  <name xml:lang="vi">KPart trình xem SVG</name>
   <name xml:lang="x-test">xxSVG Viewer KPartxx</name>
   <name xml:lang="zh-CN">SVG 查看器 KPart 组件</name>
   <summary>Rendered display of SVG files in KParts-using software</summary>
@@ -69,6 +70,7 @@
   <summary xml:lang="sv">Återgiven vy för SVG-filer i programvara som använder KParts</summary>
   <summary xml:lang="tr">SVG dosyalarının KParts kullanan yazılımda işlenmiş görüntüsü</summary>
   <summary xml:lang="uk">Показ обробленого вмісту файлів SVG у програмному забезпеченні із підтримкою KParts</summary>
+  <summary xml:lang="vi">Bộ hiển thị kết xuất các tệp SVG trong các phần mềm dùng KPart</summary>
   <summary xml:lang="x-test">xxRendered display of SVG files in KParts-using softwarexx</summary>
   <summary xml:lang="zh-CN">在使用 KParts 的软件中渲染显示 SVG 文件</summary>
   <description>
@@ -98,6 +100,7 @@
     <p xml:lang="sv">SVG KPart-visning tillåter program som använder KParts att visa filer med SVG-format i en återgiven vy.</p>
     <p xml:lang="tr">SVG Görüntüleyici KPart, KParts kullanan yazılımların SVG dosyalarını işlenmiş bir görünümde görüntülemesine olanak tanır.</p>
     <p xml:lang="uk">Модуль перегляду даних SVG надає змогу переглядати оброблений вміст файлів SVG у будь-якому програмному забезпеченні із підтримкою KParts.</p>
+    <p xml:lang="vi">KPart trình xem SVG cho phép các phần mềm dùng KPart có thể hiển thị tệp SVG trong một khung xem kết xuất.</p>
     <p xml:lang="x-test">xxThe SVG Viewer KPart allows KParts-using software to display SVG files in a rendered view.xx</p>
     <p xml:lang="zh-CN">SVG 查看器 KPart 组件让使用 KParts 的软件能够在一个视图中显示渲染后的 SVG 文件。</p>
   </description>
