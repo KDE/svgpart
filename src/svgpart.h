@@ -9,7 +9,6 @@
 
 // KF
 #include <KParts/ReadOnlyPart>
-#include <kcoreaddons_version.h>
 
 class SvgBrowserExtension;
 class KPluginMetaData;
