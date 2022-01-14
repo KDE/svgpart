@@ -25,7 +25,12 @@ include(FeatureSummary)
 include(KDEClangFormat)
 include(KDEGitCommitHooks)
 
-find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Widgets Svg)
+find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Widgets Svg)
+if (QT_MAJOR_VERSION STREQUAL "6")
+    find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS SvgWidgets)
+endif()
+
+
 find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS CoreAddons Parts I18n)
 
 add_definitions(

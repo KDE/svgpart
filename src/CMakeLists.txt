@@ -17,12 +17,17 @@ target_link_libraries(svgpart
     KF5::CoreAddons
     KF5::Parts
     KF5::I18n
-    Qt5::Widgets
-    Qt5::Svg
+    Qt${QT_MAJOR_VERSION}::Widgets
+    Qt${QT_MAJOR_VERSION}::Svg
 )
 
+if (QT_MAJOR_VERSION STREQUAL "6")
+    target_link_libraries(svgpart Qt6::SvgWidgets)
+endif()
+
+
 install(TARGETS svgpart DESTINATION ${KDE_INSTALL_PLUGINDIR}/kf5/parts)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/svgpart.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR})
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/svgpart.desktop DESTINATION ${KDE_INSTALL_KSERVICESDIR})
 
 install(
     FILES org.kde.svgpart.metainfo.xml
