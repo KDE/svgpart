@@ -94,7 +94,7 @@ Comment[x-test]=xxA KPart to display SVG imagesxx
 Comment[zh_CN]=用于显示 SVG 图像的 KPart 组件
 MimeType=image/svg+xml;image/svg+xml-compressed;
 ServiceTypes=KParts/ReadOnlyPart
-X-KDE-Library=kf5/parts/svgpart
+X-KDE-Library=kf@QT_MAJOR_VERSION@/parts/svgpart
 InitialPreference=12
 Icon=image-svg+xml
 
