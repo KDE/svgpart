@@ -11,6 +11,8 @@
 #include <QTransform>
 #include <QWheelEvent>
 
+constexpr qreal zoomFactor = 1.2;
+
 SvgView::SvgView(QGraphicsScene *scene, QWidget *parent)
     : QGraphicsView(scene, parent)
 {
@@ -20,12 +22,12 @@ SvgView::SvgView(QGraphicsScene *scene, QWidget *parent)
 
 void SvgView::zoomIn()
 {
-    setZoom(zoom() * 2);
+    setZoom(zoom() * zoomFactor);
 }
 
 void SvgView::zoomOut()
 {
-    setZoom(zoom() / 2);
+    setZoom(zoom() / zoomFactor);
 }
 
 void SvgView::zoomActualSize()
