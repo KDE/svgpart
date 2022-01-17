@@ -9,6 +9,7 @@
 // Qt
 #include <QScrollBar>
 #include <QTransform>
+#include <QWheelEvent>
 
 SvgView::SvgView(QGraphicsScene *scene, QWidget *parent)
     : QGraphicsView(scene, parent)
@@ -62,4 +63,21 @@ int SvgView::verticalScrollPosition() const
 qreal SvgView::zoom() const
 {
     return transform().m11();
+}
+
+void SvgView::wheelEvent(QWheelEvent *wheelEvent)
+{
+    if (wheelEvent->modifiers() & Qt::ControlModifier) {
+        const int delta = wheelEvent->angleDelta().y();
+        if (delta > 0) {
+            zoomIn();
+        } else if (delta < 0) {
+            zoomOut();
+        }
+
+        wheelEvent->accept();
+        return;
+    }
+
+    QGraphicsView::wheelEvent(wheelEvent);
 }

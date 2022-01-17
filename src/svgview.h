@@ -30,6 +30,9 @@ public Q_SLOTS:
     void zoomActualSize();
     void zoomIn();
     void zoomOut();
+
+protected:
+    void wheelEvent(QWheelEvent *wheelEvent) override;
 };
 
 #endif
