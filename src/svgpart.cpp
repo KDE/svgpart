@@ -6,20 +6,19 @@
 
 #include "svgpart.h"
 
+// part
 #include "svgbrowserextension.h"
+#include "svgview.h"
 // KF
 #include <KActionCollection>
 #include <KLocalizedString>
 #include <KPluginFactory>
 #include <KPluginMetaData>
 #include <KStandardAction>
-
 // Qt
 #include <QGraphicsScene>
 #include <QGraphicsSvgItem>
-#include <QGraphicsView>
 #include <QMimeDatabase>
-#include <QScrollBar>
 #include <QSvgRenderer>
 #include <QTimer>
 #include <QTransform>
@@ -36,14 +35,12 @@ SvgPart::SvgPart(QWidget *parentWidget, QObject *parent, const KPluginMetaData &
 
     mRenderer = new QSvgRenderer(this);
     mScene = new QGraphicsScene(this);
-    mView = new QGraphicsView(mScene, parentWidget);
-    mView->setFrameStyle(QFrame::NoFrame);
-    mView->setDragMode(QGraphicsView::ScrollHandDrag);
+    mView = new SvgView(mScene, parentWidget);
     setWidget(mView);
 
-    KStandardAction::actualSize(this, &SvgPart::zoomActualSize, actionCollection());
-    KStandardAction::zoomIn(this, &SvgPart::zoomIn, actionCollection());
-    KStandardAction::zoomOut(this, &SvgPart::zoomOut, actionCollection());
+    KStandardAction::actualSize(mView, &SvgView::zoomActualSize, actionCollection());
+    KStandardAction::zoomIn(mView, &SvgView::zoomIn, actionCollection());
+    KStandardAction::zoomOut(mView, &SvgView::zoomOut, actionCollection());
     setXMLFile(QStringLiteral("svgpart.rc"));
 }
 
@@ -111,8 +108,8 @@ bool SvgPart::closeUrl()
         mPreviousUrl = currentUrl;
 
         mPreviousZoom = zoom();
-        mPreviousHorizontalScrollPosition = mView->horizontalScrollBar()->value();
-        mPreviousVerticalScrollPosition = mView->verticalScrollBar()->value();
+        mPreviousHorizontalScrollPosition = mView->horizontalScrollPosition();
+        mPreviousVerticalScrollPosition = mView->verticalScrollPosition();
     }
 
     mView->resetTransform();
@@ -164,10 +161,10 @@ void SvgPart::delayedRestoreViewState()
     }
 
     // now restore view state
-    setZoom(zoomValue);
+    mView->setZoom(zoomValue);
 
-    mView->horizontalScrollBar()->setValue(args.xOffset());
-    mView->verticalScrollBar()->setValue(args.yOffset());
+    mView->setHorizontalScrollPosition(args.xOffset());
+    mView->setVerticalScrollPosition(args.yOffset());
 }
 
 void SvgPart::setExtendedRestoreArguments(qreal zoom)
@@ -176,41 +173,20 @@ void SvgPart::setExtendedRestoreArguments(qreal zoom)
     mRestoreZoom = zoom;
 }
 
-void SvgPart::zoomIn()
-{
-    setZoom(zoom() * 2);
-}
-
-void SvgPart::zoomOut()
-{
-    setZoom(zoom() / 2);
-}
-
-void SvgPart::zoomActualSize()
-{
-    setZoom(1.0);
-}
 
 qreal SvgPart::zoom() const
 {
-    return mView->transform().m11();
-}
-
-void SvgPart::setZoom(qreal value)
-{
-    QTransform matrix;
-    matrix.scale(value, value);
-    mView->setTransform(matrix);
+    return mView->zoom();
 }
 
 int SvgPart::horizontalScrollPosition() const
 {
-    return mView->horizontalScrollBar()->value();
+    return mView->horizontalScrollPosition();
 }
 
 int SvgPart::verticalScrollPosition() const
 {
-    return mView->verticalScrollBar()->value();
+    return mView->verticalScrollPosition();
 }
 
 #include "svgpart.moc"

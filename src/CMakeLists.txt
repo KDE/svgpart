@@ -5,6 +5,7 @@ configure_file(svgpart.desktop.in ${CMAKE_CURRENT_BINARY_DIR}/svgpart.desktop @O
 add_library(svgpart MODULE)
 
 target_sources(svgpart PRIVATE
+    svgview.cpp
     svgbrowserextension.cpp
     svgpart.cpp
 
