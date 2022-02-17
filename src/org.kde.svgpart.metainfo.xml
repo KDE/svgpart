@@ -75,7 +75,7 @@
   <summary xml:lang="zh-CN">在使用 KParts 的软件中渲染显示 SVG 文件</summary>
   <description>
     <p>The SVG Viewer KPart allows KParts-using software to display SVG files in a rendered view.</p>
-    <p xml:lang="ar">عارض صور اس في جي يمكن التطبيقات التي تستخدم جزء ك لعرض ملفات اس في جي.</p>
+    <p xml:lang="ar">يمكن عارض صور اس في جي التطبيقات التي تستخدم جزء ك من تصيير وعرض ملفات اس في جي.</p>
     <p xml:lang="ca">La KPart del visor de SVG permet que el programari que utilitza les KParts, mostri els fitxers SVG en una vista renderitzada.</p>
     <p xml:lang="ca-valencia">La KPart del visor de SVG permet que el programari que utilitza les KParts, mostre els fitxers SVG en una vista renderitzada.</p>
     <p xml:lang="de">Die SVG-Betrachter-Komponente befähigt Software, die KParts verwendet, zur Anzeige von Dateien im SVG-Format.</p>
