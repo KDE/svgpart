@@ -64,6 +64,7 @@ Name[zh_CN]=SVG 组件
 Name[zh_TW]=Svg 部件
 Comment=A KPart to display SVG images
 Comment[ar]=جزء ك لعرض صور اس في جي
+Comment[bg]=KPart за показване на SVG изображения
 Comment[ca]=Una KPart per a visualitzar imatges SVG
 Comment[ca@valencia]=Una KPart per a visualitzar imatges SVG
 Comment[cs]=Komponenta k zobrazování obrázků SVG
