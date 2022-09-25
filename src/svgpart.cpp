@@ -21,7 +21,6 @@
 #include <QMimeDatabase>
 #include <QSvgRenderer>
 #include <QTimer>
-#include <QTransform>
 
 // Factory Code
 K_PLUGIN_FACTORY_WITH_JSON(SvgPartFactory, "svgpart.json", registerPlugin<SvgPart>();)
