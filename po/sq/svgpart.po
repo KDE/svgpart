@@ -1,0 +1,49 @@
+# Albanian translation for kdegraphics
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the kdegraphics package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdegraphics\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-05-17 00:18+0000\n"
+"PO-Revision-Date: 2009-03-09 18:03+0000\n"
+"Last-Translator: Vilson Gjeci <vilsongjeci@gmail.com>\n"
+"Language-Team: Albanian <sq@li.org>\n"
+"Language: sq\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-04-22 09:56+0000\n"
+"X-Generator: Launchpad (build 12883)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. i18n: ectx: Menu (view)
+#: svgpart.rc:4
+#, kde-format
+msgid "&View"
+msgstr "&Shfaqe"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: svgpart.rc:13
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Shiriti Kryesor"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "KDE Shqip, Launchpad Contributions: Vilson Gjeci"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "kde-shqip@yahoogroups.com,vilsongjeci@gmail.com"
+
+#~ msgid "SVG Part"
+#~ msgstr "Pjesa SVG"
+
+#~ msgid "A KPart to display SVG images"
+#~ msgstr "Një KPart për të shfaqur imazhet SVG"
+
+#~ msgid "Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"
+#~ msgstr "Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"

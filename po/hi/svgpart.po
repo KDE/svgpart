@@ -1,0 +1,48 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the svgpart package.
+#
+# G Karunakar <karunakar@indlinux.org>, 2020.
+# Raghavendra Kamath <raghu@raghukamath.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: svgpart\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-05-17 00:18+0000\n"
+"PO-Revision-Date: 2021-06-29 17:31+0530\n"
+"Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
+"Language-Team: kde-hindi\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Lokalize 21.04.2\n"
+
+#. i18n: ectx: Menu (view)
+#: svgpart.rc:4
+#, kde-format
+msgid "&View"
+msgstr "दृश्य (&V)"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: svgpart.rc:13
+#, kde-format
+msgid "Main Toolbar"
+msgstr "मुख्य साधन पट्टी"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "करुणाकर गुंटुपल्ली"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "karunakar@indlinux.org"
+
+#~ msgid "SVG Part"
+#~ msgstr "SVG भाग"
+
+#~ msgid "A KPart to display SVG images"
+#~ msgstr "SVG छवि दिखाने के लिए एक KPart"
+
+#~ msgid "Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"
+#~ msgstr "Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"

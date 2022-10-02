@@ -1,0 +1,32 @@
+# Translation of svgpart to Norwegian Nynorsk
+#
+# Karl Ove Hufthammer <karl@huftis.org>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: svgpart\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-05-17 00:18+0000\n"
+"PO-Revision-Date: 2008-08-03 19:23+0200\n"
+"Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
+"Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#. i18n: ectx: Menu (view)
+#: svgpart.rc:4
+#, kde-format
+msgid "&View"
+msgstr "&Vis"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: svgpart.rc:13
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Hovudverktøylinje"

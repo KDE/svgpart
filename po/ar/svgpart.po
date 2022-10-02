@@ -1,0 +1,48 @@
+# translation of svgpart.po to Arabic
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# zayed <zayed.alsaidi@gmail.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: svgpart\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-05-17 00:18+0000\n"
+"PO-Revision-Date: 2008-12-17 12:03+0400\n"
+"Last-Translator: zayed <zayed.alsaidi@gmail.com>\n"
+"Language-Team: Arabic <linuxac-kde-arabic-team@googlegroups.com>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. i18n: ectx: Menu (view)
+#: svgpart.rc:4
+#, kde-format
+msgid "&View"
+msgstr "&عرض"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: svgpart.rc:13
+#, kde-format
+msgid "Main Toolbar"
+msgstr "قائمة الأدوات الرئيسية"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "زايد السعيدي"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "zayed.alsaidi@gmail.com"
+
+#~ msgid "SVG Part"
+#~ msgstr "جزء ال SVG"
+
+#~ msgid "A KPart to display SVG images"
+#~ msgstr "مكون KPart لإظهار الصور بالصيغة SVG"
+
+#~ msgid "Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"
+#~ msgstr "حقوق النسخ 2007 ، <Aurélien Gâteau <aurelien.gateau@free.fr"

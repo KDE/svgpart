@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: svgpart\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-05-17 00:18+0000\n"
+"PO-Revision-Date: 2009-01-22 04:01+0200\n"
+"Last-Translator: Omer Ensari <oensari@gmail.com>\n"
+"Language-Team: Kurdish <kde-i18n-doc@kde.org>\n"
+"Language: ku\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: Kurdish\n"
+"X-Poedit-SourceCharset: utf8\n"
+
+#. i18n: ectx: Menu (view)
+#: svgpart.rc:4
+#, kde-format
+msgid "&View"
+msgstr "&Bibîne"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: svgpart.rc:13
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Darikê Amûran ya Mak"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Omer Ensari"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "oensari@gmail.com"
+
+#~ msgid "SVG Part"
+#~ msgstr "Beşa SVG"
+
+#~ msgid "A KPart to display SVG images"
+#~ msgstr "KPart ji bo nîşandana wêneyên SVG"
+
+#~ msgid "Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"
+#~ msgstr "Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"

@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# obsoleteman <tulliana@gmail.com>, 2008
+msgid ""
+msgstr ""
+"Project-Id-Version: kdegraphics-kde4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-05-17 00:18+0000\n"
+"PO-Revision-Date: 2014-06-08 13:55+0000\n"
+"Last-Translator: Volkan Gezer <volkangezer@gmail.com>\n"
+"Language-Team: Turkish (http://www.transifex.com/projects/p/kdegraphics-k-tr/"
+"language/tr/)\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. i18n: ectx: Menu (view)
+#: svgpart.rc:4
+#, kde-format
+msgid "&View"
+msgstr "&Görünüm"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: svgpart.rc:13
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Ana Araç Çubuğu"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Serdar Soytetir"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "tulliana@gmail.com"
+
+#~ msgid "SVG Part"
+#~ msgstr "SVG Parçacığı"
+
+#~ msgid "A KPart to display SVG images"
+#~ msgstr "SVG resimleri göstermek için bir KPart"
+
+#~ msgid "Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"
+#~ msgstr "Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"

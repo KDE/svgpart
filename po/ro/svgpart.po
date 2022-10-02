@@ -1,0 +1,49 @@
+# translation of svgpart to Romanian
+# Copyright (C) 2008 This_file_is_part_of_KDE
+# This file is distributed under the same license as the svgpart package.
+# Laurenţiu Buzdugan <lbuz@rolix.org>, 2008".
+# Sergiu Bivol <sergiu@cip.md>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: svgpart\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-05-17 00:18+0000\n"
+"PO-Revision-Date: 2008-12-20 20:04+0200\n"
+"Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
+"Language-Team: Romanian <kde-i18n-ro@lists.kde.org>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+
+#. i18n: ectx: Menu (view)
+#: svgpart.rc:4
+#, kde-format
+msgid "&View"
+msgstr "&Vizualizare"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: svgpart.rc:13
+#, kde-format
+msgid "Main Toolbar"
+msgstr "Bara de unelte principală"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Sergiu Bivol"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "sergiu@cip.md"
+
+#~ msgid "SVG Part"
+#~ msgstr "Componentă SVG"
+
+#~ msgid "A KPart to display SVG images"
+#~ msgstr "O componentă pentru afișarea imaginilor SVG"
+
+#~ msgid "Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"
+#~ msgstr "Drept de autor 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"
