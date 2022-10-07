@@ -29,20 +29,3 @@ msgstr "表示(&V)"
 #, kde-format
 msgid "Main Toolbar"
 msgstr "メインツールバー"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Yukiko Bando"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "ybando@k6.dion.ne.jp"
-
-#~ msgid "SVG Part"
-#~ msgstr "SVG コンポーネント"
-
-#~ msgid "A KPart to display SVG images"
-#~ msgstr "SVG 画像を表示する KPart"
-
-#~ msgid "Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"
-#~ msgstr "Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"
