@@ -28,7 +28,10 @@ endif()
 
 
 install(TARGETS svgpart DESTINATION ${KDE_INSTALL_PLUGINDIR}/kf${QT_MAJOR_VERSION}/parts)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/svgpart.desktop DESTINATION ${KDE_INSTALL_KSERVICESDIR})
+
+if(QT_MAJOR_VERSION STREQUAL "5")
+    install(FILES ${CMAKE_CURRENT_BINARY_DIR}/svgpart.desktop DESTINATION ${KDE_INSTALL_KSERVICESDIR})
+endif()
 
 install(
     FILES org.kde.svgpart.metainfo.xml
