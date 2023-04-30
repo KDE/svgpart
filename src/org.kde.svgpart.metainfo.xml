@@ -26,6 +26,7 @@
   <name xml:lang="eu">SVG erakusle KPart</name>
   <name xml:lang="fi">SVG-katselin-KPart</name>
   <name xml:lang="fr">Afficheur « SVG » KPart</name>
+  <name xml:lang="gl">KPart de visor de SVG</name>
   <name xml:lang="hi">एसवीजी प्रदर्शक केपार्ट</name>
   <name xml:lang="hu">SVG-megjelenítő KPart</name>
   <name xml:lang="ia">KPart Visor de SVG</name>
@@ -61,6 +62,7 @@
   <summary xml:lang="eu">KPart darabilten softwareei SVG fitxategiak errendatuta azaltzea</summary>
   <summary xml:lang="fi">SVG-tiedostojen hahmonnettu näyttö KPartsia käyttäviin ohjelmiin</summary>
   <summary xml:lang="fr">Affichage rendu pour les fichiers « SVG » par un logiciel utilisant KPart</summary>
+  <summary xml:lang="gl">Visualización renderizada de ficheiros SVG en software que usa KParts</summary>
   <summary xml:lang="hi">सॉफ़्टवेयर का उपयोग करके केपार्ट में एसवीजी फ़ाइलों का रेंडर किया गया प्रदर्शन</summary>
   <summary xml:lang="hu">SVG-fájlok renderelt megjelenítése KPartot használó szoftverekben</summary>
   <summary xml:lang="ia">Schermo rendite de files SVG in software usante KParts</summary>
@@ -96,6 +98,7 @@
     <p xml:lang="eu">SVG erakusle KPart-ek KPart darabilten softwareei SVG fitxategiak errendatutako ikuspegian azaltzen aukera eskaintzen die.</p>
     <p xml:lang="fi">SVG-katselin-KPart sallii KPartsia käyttäviä ohjelmien näyttävät SVG-tiedostot hahmonnettuina.</p>
     <p xml:lang="fr">L'afficheur « KPart » de fichiers « svg » permet à un logiciel utilisant « KParts » d'afficher les fichiers « SVG » dans un affichage de rendu.</p>
+    <p xml:lang="gl">O KPart de visor de SVG permite ao software que usa KParts mostrar ficheiros SVG nunha vista renderizada.</p>
     <p xml:lang="hi">एसवीजी व्यूअर केपार्ट,केपार्ट्स-उपयोग करने वाले सॉफ़्टवेयर को एसवीजी फ़ाइलों को रेंडर किए गए दृश्य में प्रदर्शित करने के लिए सहायता करता है। </p>
     <p xml:lang="hu">Az SVG-megjelenítő KPart lehetővé teszi az azt használó alkalmazásoknak SVG-fájlok megjelenítését egy renderelt nézetben.</p>
     <p xml:lang="ia">Le visor de SVG KPart permitte a software usante KParts de monstrar files SVG in un vista rendite.</p>
