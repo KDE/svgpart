@@ -41,3 +41,5 @@ void SvgBrowserExtension::restoreState(QDataStream &stream)
     m_part->setExtendedRestoreArguments(zoom);
     KParts::BrowserExtension::restoreState(stream);
 }
+
+#include "moc_svgbrowserextension.cpp"

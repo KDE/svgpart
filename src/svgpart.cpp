@@ -188,4 +188,5 @@ int SvgPart::verticalScrollPosition() const
     return mView->verticalScrollPosition();
 }
 
+#include "moc_svgpart.cpp"
 #include "svgpart.moc"

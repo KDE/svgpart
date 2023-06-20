@@ -83,3 +83,5 @@ void SvgView::wheelEvent(QWheelEvent *wheelEvent)
 
     QGraphicsView::wheelEvent(wheelEvent);
 }
+
+#include "moc_svgview.cpp"
