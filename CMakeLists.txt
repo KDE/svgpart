@@ -32,7 +32,7 @@ if (QT_MAJOR_VERSION STREQUAL "6")
 endif()
 
 
-find_package(KF5 ${KF_MIN_VERSION} REQUIRED COMPONENTS CoreAddons Parts I18n)
+find_package(KF${QT_MAJOR_VERSION} ${KF_MIN_VERSION} REQUIRED COMPONENTS CoreAddons Parts I18n)
 
 ecm_set_disabled_deprecation_versions(QT 5.15.2
     KF 5.101.0
