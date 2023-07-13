@@ -15,9 +15,9 @@ target_sources(svgpart PRIVATE
 kcoreaddons_desktop_to_json(svgpart ${CMAKE_CURRENT_BINARY_DIR}/svgpart.desktop)
 
 target_link_libraries(svgpart
-    KF5::CoreAddons
-    KF5::Parts
-    KF5::I18n
+    KF${QT_MAJOR_VERSION}::CoreAddons
+    KF${QT_MAJOR_VERSION}::Parts
+    KF${QT_MAJOR_VERSION}::I18n
     Qt${QT_MAJOR_VERSION}::Widgets
     Qt${QT_MAJOR_VERSION}::Svg
 )
