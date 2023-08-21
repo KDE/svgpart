@@ -1,7 +1,5 @@
 add_definitions(-DTRANSLATION_DOMAIN="svgpart")
 
-configure_file(svgpart.desktop.in ${CMAKE_CURRENT_BINARY_DIR}/svgpart.desktop @ONLY)
-
 add_library(svgpart MODULE)
 
 target_sources(svgpart PRIVATE
@@ -12,7 +10,12 @@ target_sources(svgpart PRIVATE
     svgpart.qrc
 )
 
-kcoreaddons_desktop_to_json(svgpart ${CMAKE_CURRENT_BINARY_DIR}/svgpart.desktop)
+if (QT_MAJOR_VERSION STREQUAL "5")
+    configure_file(svgpart.desktop.in ${CMAKE_CURRENT_BINARY_DIR}/svgpart.desktop @ONLY)
+    kcoreaddons_desktop_to_json(svgpart ${CMAKE_CURRENT_BINARY_DIR}/svgpart.desktop)
+endif()
+
+configure_file(svgpart.json.in ${CMAKE_CURRENT_BINARY_DIR}/svgpart.json @ONLY)
 
 target_link_libraries(svgpart
     KF${QT_MAJOR_VERSION}::CoreAddons
@@ -28,7 +31,10 @@ endif()
 
 
 install(TARGETS svgpart DESTINATION ${KDE_INSTALL_PLUGINDIR}/kf${QT_MAJOR_VERSION}/parts)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/svgpart.desktop DESTINATION ${KDE_INSTALL_KSERVICESDIR})
+
+if (QT_MAJOR_VERSION STREQUAL "5")
+     install(FILES ${CMAKE_CURRENT_BINARY_DIR}/svgpart.desktop DESTINATION ${KDE_INSTALL_KSERVICESDIR})
+endif()
 
 install(
     FILES org.kde.svgpart.metainfo.xml
