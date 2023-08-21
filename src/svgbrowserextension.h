@@ -7,12 +7,23 @@
 #ifndef SVGBROWSEREXTENSION_H
 #define SVGBROWSEREXTENSION_H
 
+// Qt
+#include <QtGlobal>
+
 // KF
+#if QT_VERSION_MAJOR == 5
 #include <KParts/BrowserExtension>
+#else
+#include <KParts/NavigationExtension>
+#endif
 
 class SvgPart;
 
+#if QT_VERSION_MAJOR == 5
 class SvgBrowserExtension : public KParts::BrowserExtension
+#else
+class SvgBrowserExtension : public KParts::NavigationExtension
+#endif
 {
     Q_OBJECT
 
