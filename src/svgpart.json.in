@@ -3,11 +3,29 @@
         "Authors": [
             {
                 "Email": "aurelien.gateau@free.fr",
-                "Name": "Aurélien Gâteau"
+                "Name": "Aurélien Gâteau",
+                "Name[ca]": "Aurélien Gâteau",
+                "Name[es]": "Aurélien Gâteau",
+                "Name[sv]": "Aurélien Gâteau",
+                "Name[tr]": "Aurélien Gâteau",
+                "Name[uk]": "Aurélien Gâteau",
+                "Name[x-test]": "xxAurélien Gâteauxx"
             }
         ],
         "Copyright": "Copyright 2007 Aurélien Gâteau",
+        "Copyright[ca]": "Copyright 2007 Aurélien Gâteau",
+        "Copyright[es]": "Copyright 2007 Aurélien Gâteau",
+        "Copyright[sv]": "Copyright 2007, Aurélien Gâteau ",
+        "Copyright[tr]": "Telif hakkı 2007 Aurélien Gâteau",
+        "Copyright[uk]": "© Aurélien Gâteau, 2007",
+        "Copyright[x-test]": "xxCopyright 2007 Aurélien Gâteauxx",
         "Description": "A KPart to display SVG images",
+        "Description[ca]": "Una KPart per a visualitzar imatges SVG",
+        "Description[es]": "KPart para mostrar imágenes SVG",
+        "Description[sv]": "Ett KDE delprogram för att visa SVG-bilder",
+        "Description[tr]": "SVG görsellerini görüntülemek için bir KPart",
+        "Description[uk]": "KPart для показу зображень SVG",
+        "Description[x-test]": "xxA KPart to display SVG imagesxx",
         "Icon": "image-svg+xml",
         "InitialPreference": 12,
         "License": "GPL",
@@ -16,6 +34,12 @@
             "image/svg+xml-compressed"
         ],
         "Name": "Svg Part",
+        "Name[ca]": "Part SVG",
+        "Name[es]": "Parte Svg",
+        "Name[sv]": "SVG-delprogram",
+        "Name[tr]": "SVG Kısmı",
+        "Name[uk]": "Компонент Svg",
+        "Name[x-test]": "xxSvg Partxx",
         "ServiceTypes": [
             "KParts/ReadOnlyPart"
         ],
