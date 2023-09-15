@@ -12,8 +12,8 @@ set(SVGPART_VERSION "${SVGPART_BASE_VERSION}.${RELEASE_SERVICE_COMPACT_VERSION}"
 
 project(svgpart VERSION ${SVGPART_VERSION})
 
-set(QT_MIN_VERSION "5.15.2")
-set(KF_MIN_VERSION "5.92.0")
+set(QT_MIN_VERSION "6.5.0")
+set(KF_MIN_VERSION "5.240.0")
 
 find_package(ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ECM_MODULE_PATH})
@@ -26,16 +26,14 @@ include(KDEClangFormat)
 include(KDEGitCommitHooks)
 include(ECMDeprecationSettings)
 
-find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Widgets Svg)
-if (QT_MAJOR_VERSION STREQUAL "6")
-    find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS SvgWidgets)
-endif()
+find_package(Qt6 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Widgets Svg)
+find_package(Qt6 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS SvgWidgets)
 
 
-find_package(KF${QT_MAJOR_VERSION} ${KF_MIN_VERSION} REQUIRED COMPONENTS CoreAddons Parts I18n)
+find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS CoreAddons Parts I18n)
 
-ecm_set_disabled_deprecation_versions(QT 5.15.2
-    KF 5.101.0
+ecm_set_disabled_deprecation_versions(QT 6.5.0
+    KF 5.240.0
     )
 
 add_subdirectory(src)

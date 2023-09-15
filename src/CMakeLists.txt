@@ -10,31 +10,20 @@ target_sources(svgpart PRIVATE
     svgpart.qrc
 )
 
-if (QT_MAJOR_VERSION STREQUAL "5")
-    configure_file(svgpart.desktop.in ${CMAKE_CURRENT_BINARY_DIR}/svgpart.desktop @ONLY)
-    kcoreaddons_desktop_to_json(svgpart ${CMAKE_CURRENT_BINARY_DIR}/svgpart.desktop)
-endif()
-
 configure_file(svgpart.json.in ${CMAKE_CURRENT_BINARY_DIR}/svgpart.json @ONLY)
 
 target_link_libraries(svgpart
-    KF${QT_MAJOR_VERSION}::CoreAddons
-    KF${QT_MAJOR_VERSION}::Parts
-    KF${QT_MAJOR_VERSION}::I18n
-    Qt${QT_MAJOR_VERSION}::Widgets
-    Qt${QT_MAJOR_VERSION}::Svg
+    KF6::CoreAddons
+    KF6::Parts
+    KF6::I18n
+    Qt6::Widgets
+    Qt6::Svg
 )
 
-if (QT_MAJOR_VERSION STREQUAL "6")
-    target_link_libraries(svgpart Qt6::SvgWidgets)
-endif()
+target_link_libraries(svgpart Qt6::SvgWidgets)
 
 
-install(TARGETS svgpart DESTINATION ${KDE_INSTALL_PLUGINDIR}/kf${QT_MAJOR_VERSION}/parts)
-
-if (QT_MAJOR_VERSION STREQUAL "5")
-     install(FILES ${CMAKE_CURRENT_BINARY_DIR}/svgpart.desktop DESTINATION ${KDE_INSTALL_KSERVICESDIR})
-endif()
+install(TARGETS svgpart DESTINATION ${KDE_INSTALL_PLUGINDIR}/kf6/parts)
 
 install(
     FILES org.kde.svgpart.metainfo.xml

@@ -26,18 +26,10 @@
 K_PLUGIN_FACTORY_WITH_JSON(SvgPartFactory, "svgpart.json", registerPlugin<SvgPart>();)
 
 SvgPart::SvgPart(QWidget *parentWidget, QObject *parent, const KPluginMetaData &metaData, const QVariantList &)
-#if QT_VERSION_MAJOR == 5
-    : KParts::ReadOnlyPart(parent)
-#else
     : KParts::ReadOnlyPart(parent, metaData)
-#endif
     , mItem(nullptr)
     , m_browserExtension(new SvgBrowserExtension(this))
 {
-#if QT_VERSION_MAJOR == 5
-    setMetaData(metaData);
-#endif
-
     mRenderer = new QSvgRenderer(this);
     mScene = new QGraphicsScene(this);
     mView = new SvgView(mScene, parentWidget);

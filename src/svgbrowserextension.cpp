@@ -12,11 +12,7 @@
 #include <QDataStream>
 
 SvgBrowserExtension::SvgBrowserExtension(SvgPart *part)
-#if QT_VERSION_MAJOR == 5
-    : KParts::BrowserExtension(part)
-#else
     : KParts::NavigationExtension(part)
-#endif
     , m_part(part)
 {
 }
@@ -34,11 +30,7 @@ int SvgBrowserExtension::yOffset()
 void SvgBrowserExtension::saveState(QDataStream &stream)
 {
     stream << m_part->zoom();
-#if QT_VERSION_MAJOR == 5
-    KParts::BrowserExtension::saveState(stream);
-#else
     KParts::NavigationExtension::saveState(stream);
-#endif
 }
 
 void SvgBrowserExtension::restoreState(QDataStream &stream)
@@ -47,11 +39,7 @@ void SvgBrowserExtension::restoreState(QDataStream &stream)
     stream >> zoom;
 
     m_part->setExtendedRestoreArguments(zoom);
-#if QT_VERSION_MAJOR == 5
-    KParts::BrowserExtension::restoreState(stream);
-#else
     KParts::NavigationExtension::restoreState(stream);
-#endif
 }
 
 #include "moc_svgbrowserextension.cpp"
