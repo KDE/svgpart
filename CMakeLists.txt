@@ -26,9 +26,11 @@ include(KDEClangFormat)
 include(KDEGitCommitHooks)
 include(ECMDeprecationSettings)
 
-find_package(Qt6 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Widgets Svg)
-find_package(Qt6 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS SvgWidgets)
-
+find_package(Qt6 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
+    Widgets
+    Svg
+    SvgWidgets
+)
 
 find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS CoreAddons Parts I18n)
 

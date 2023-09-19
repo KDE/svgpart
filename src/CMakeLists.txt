@@ -18,10 +18,8 @@ target_link_libraries(svgpart
     KF6::I18n
     Qt6::Widgets
     Qt6::Svg
+    Qt6::SvgWidgets
 )
-
-target_link_libraries(svgpart Qt6::SvgWidgets)
-
 
 install(TARGETS svgpart DESTINATION ${KDE_INSTALL_PLUGINDIR}/kf6/parts)
 
