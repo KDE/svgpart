@@ -32,7 +32,13 @@ find_package(Qt6 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
     SvgWidgets
 )
 
-find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS CoreAddons Parts I18n)
+find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS
+    ConfigWidgets
+    CoreAddons
+    I18n
+    Parts
+    XmlGui
+)
 
 ecm_set_disabled_deprecation_versions(QT 6.5.0
     KF 5.240.0
