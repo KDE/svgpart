@@ -24,7 +24,8 @@
                 "Name[sv]": "Aurélien Gâteau",
                 "Name[tr]": "Aurélien Gâteau",
                 "Name[uk]": "Aurélien Gâteau",
-                "Name[x-test]": "xxAurélien Gâteauxx"
+                "Name[x-test]": "xxAurélien Gâteauxx",
+                "Name[zh_CN]": "Aurélien Gâteau"
             }
         ],
         "Copyright": "Copyright 2007 Aurélien Gâteau",
@@ -49,6 +50,7 @@
         "Copyright[tr]": "Telif hakkı 2007 Aurélien Gâteau",
         "Copyright[uk]": "© Aurélien Gâteau, 2007",
         "Copyright[x-test]": "xxCopyright 2007 Aurélien Gâteauxx",
+        "Copyright[zh_CN]": "Copyright 2007 Aurélien Gâteau",
         "Description": "A KPart to display SVG images",
         "Description[ca@valencia]": "Una KPart per a visualitzar imatges SVG",
         "Description[ca]": "Una KPart per a visualitzar imatges SVG",
@@ -71,6 +73,7 @@
         "Description[tr]": "SVG görsellerini görüntülemek için bir KPart",
         "Description[uk]": "KPart для показу зображень SVG",
         "Description[x-test]": "xxA KPart to display SVG imagesxx",
+        "Description[zh_CN]": "用于显示 SVG 图像的 KPart 组件",
         "Icon": "image-svg+xml",
         "InitialPreference": 12,
         "License": "GPL",
@@ -100,6 +103,7 @@
         "Name[tr]": "SVG Kısmı",
         "Name[uk]": "Компонент Svg",
         "Name[x-test]": "xxSvg Partxx",
+        "Name[zh_CN]": "SVG 组件",
         "ServiceTypes": [
             "KParts/ReadOnlyPart"
         ],
