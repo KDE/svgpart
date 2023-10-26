@@ -17,7 +17,7 @@
   <name xml:lang="ar">جزء ك عارض صور اس في جي</name>
   <name xml:lang="bg">Визуализатор на SVG за KPart</name>
   <name xml:lang="ca">KPart del visualitzador de SVG</name>
-  <name xml:lang="ca-valencia">KPart del visor de SVG</name>
+  <name xml:lang="ca-valencia">La KPart del visor de SVG</name>
   <name xml:lang="cs">KPart pro prohlížení souborů SVG</name>
   <name xml:lang="de">SVG-Betrachter-KPart</name>
   <name xml:lang="el">SVG Viewer KPart</name>
@@ -54,7 +54,7 @@
   <summary xml:lang="ar">يستعرض صور اس في جي SVG في التطبيقات التي تستخدم جزء ك</summary>
   <summary xml:lang="bg">Визуализатор на файлове SVG за приложения, използващи KParts</summary>
   <summary xml:lang="ca">Mostra renderitzats els fitxers SVG en el programari que utilitza les KParts</summary>
-  <summary xml:lang="ca-valencia">Mostra renderitzats els fitxers SVG en el programari que utilitza KParts</summary>
+  <summary xml:lang="ca-valencia">Mostra renderitzats els fitxers SVG en el programari que utilitza les KPart</summary>
   <summary xml:lang="cs">Zpracované zobrazení SVG v aplikacích využívajících KParts</summary>
   <summary xml:lang="de">Anzeige von SVG-Dateien in Software, die KParts verwendet</summary>
   <summary xml:lang="el">Αποτύπωση SVG αρχείων σε λογισμικό με KPart</summary>
@@ -92,7 +92,7 @@
     <p xml:lang="ar">يمكن عارض صور اس في جي التطبيقات التي تستخدم جزء ك من تصيير وعرض ملفات اس في جي.</p>
     <p xml:lang="bg">Визуализатор на SVG за KPart позволява приложения, използващи KParts да показват файлове SVG в режим на преглед.</p>
     <p xml:lang="ca">La KPart del visualitzador de SVG permet que el programari que utilitza les KParts, mostri els fitxers SVG en una vista renderitzada.</p>
-    <p xml:lang="ca-valencia">KPart del visor de SVG permet que el programari que utilitza KParts, mostre els fitxers SVG en una vista renderitzada.</p>
+    <p xml:lang="ca-valencia">La KPart del visor de SVG permet que el programari que utilitza les KPart, mostre els fitxers SVG en una vista renderitzada.</p>
     <p xml:lang="de">Die SVG-Betrachter-Komponente befähigt Software, die KParts verwendet, zur Anzeige von Dateien im SVG-Format.</p>
     <p xml:lang="el">Το πρόγραμμα KPart προβολής SVG επιτρέπει σε λογισμικό με KParts να αποτυπώνει SVG αρχεία.</p>
     <p xml:lang="en-GB">The SVG Viewer KPart allows KParts-using software to display SVG files in a rendered view.</p>
