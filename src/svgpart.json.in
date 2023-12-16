@@ -29,7 +29,8 @@
                 "Name[tr]": "Aurélien Gâteau",
                 "Name[uk]": "Aurélien Gâteau",
                 "Name[x-test]": "xxAurélien Gâteauxx",
-                "Name[zh_CN]": "Aurélien Gâteau"
+                "Name[zh_CN]": "Aurélien Gâteau",
+                "Name[zh_TW]": "Aurélien Gâteau"
             }
         ],
         "Copyright": "Copyright 2007 Aurélien Gâteau",
@@ -59,6 +60,7 @@
         "Copyright[uk]": "© Aurélien Gâteau, 2007",
         "Copyright[x-test]": "xxCopyright 2007 Aurélien Gâteauxx",
         "Copyright[zh_CN]": "Copyright 2007 Aurélien Gâteau",
+        "Copyright[zh_TW]": "Copyright 2007 Aurélien Gâteau",
         "Description": "A KPart to display SVG images",
         "Description[bg]": "KPart за показване на SVG изображения",
         "Description[ca@valencia]": "Una KPart per a visualitzar imatges SVG",
@@ -85,6 +87,7 @@
         "Description[uk]": "KPart для показу зображень SVG",
         "Description[x-test]": "xxA KPart to display SVG imagesxx",
         "Description[zh_CN]": "用于显示 SVG 图像的 KPart 组件",
+        "Description[zh_TW]": "顯示 SVG 影像用的 KPart",
         "Icon": "image-svg+xml",
         "InitialPreference": 12,
         "License": "GPL",
