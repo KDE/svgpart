@@ -51,6 +51,7 @@
   <name xml:lang="vi">KPart trình xem SVG</name>
   <name xml:lang="x-test">xxSVG Viewer KPartxx</name>
   <name xml:lang="zh-CN">SVG 查看器 KPart 组件</name>
+  <name xml:lang="zh-TW">SVG 檢視器 KPart</name>
   <summary>Rendered display of SVG files in KParts-using software</summary>
   <summary xml:lang="ar">يستعرض صور اس في جي SVG في التطبيقات التي تستخدم جزء ك</summary>
   <summary xml:lang="bg">Визуализатор на файлове SVG за приложения, използващи KParts</summary>
@@ -89,6 +90,7 @@
   <summary xml:lang="vi">Bộ hiển thị kết xuất các tệp SVG trong các phần mềm dùng KPart</summary>
   <summary xml:lang="x-test">xxRendered display of SVG files in KParts-using softwarexx</summary>
   <summary xml:lang="zh-CN">在使用 KParts 的软件中渲染显示 SVG 文件</summary>
+  <summary xml:lang="zh-TW">提供利用 KParts 的軟體顯示渲染後的 SVG 檔案的功能</summary>
   <description>
     <p>The SVG Viewer KPart allows KParts-using software to display SVG files in a rendered view.</p>
     <p xml:lang="ar">يمكن عارض صور اس في جي التطبيقات التي تستخدم جزء ك من تصيير وعرض ملفات اس في جي.</p>
@@ -127,6 +129,7 @@
     <p xml:lang="vi">KPart trình xem SVG cho phép các phần mềm dùng KPart có thể hiển thị tệp SVG trong một khung xem kết xuất.</p>
     <p xml:lang="x-test">xxThe SVG Viewer KPart allows KParts-using software to display SVG files in a rendered view.xx</p>
     <p xml:lang="zh-CN">SVG 查看器 KPart 组件让使用 KParts 的软件能够在一个视图中显示渲染后的 SVG 文件。</p>
+    <p xml:lang="zh-TW">SVG 檢視器這個 KPart 讓利用 KPart 的軟體能夠渲染並顯示 SVG 格式的檔案。</p>
   </description>
   <url type="homepage">https://commits.kde.org/svgpart</url>
   <url type="donation">https://www.kde.org/community/donations/?app=svgpart</url>
