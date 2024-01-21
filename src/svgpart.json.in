@@ -66,6 +66,7 @@
         "Copyright[zh_CN]": "Copyright 2007 Aurélien Gâteau",
         "Copyright[zh_TW]": "Copyright 2007 Aurélien Gâteau",
         "Description": "A KPart to display SVG images",
+        "Description[ar]": "جزء ك لعرض صور اس في جي",
         "Description[bg]": "KPart за показване на SVG изображения",
         "Description[ca@valencia]": "Una KPart per a visualitzar imatges SVG",
         "Description[ca]": "Una KPart per a visualitzar imatges SVG",
