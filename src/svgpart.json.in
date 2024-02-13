@@ -4,6 +4,7 @@
             {
                 "Email": "aurelien.gateau@free.fr",
                 "Name": "Aurélien Gâteau",
+                "Name[ar]": "Aurélien Gâteau",
                 "Name[ast]": "Aurélien Gâteau",
                 "Name[bg]": "Aurélien Gâteau",
                 "Name[ca@valencia]": "Aurélien Gâteau",
@@ -38,6 +39,7 @@
             }
         ],
         "Copyright": "Copyright 2007 Aurélien Gâteau",
+        "Copyright[ar]": "حقوق النسخ 2007 Aurélien Gâteau",
         "Copyright[ast]": "© 2007, Aurélien Gâteau",
         "Copyright[bg]": "Copyright 2007 Aurélien Gâteau",
         "Copyright[ca@valencia]": "Copyright 2007 Aurélien Gâteau",
