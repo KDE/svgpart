@@ -13,7 +13,7 @@ set(SVGPART_VERSION "${SVGPART_BASE_VERSION}.${RELEASE_SERVICE_COMPACT_VERSION}"
 project(svgpart VERSION ${SVGPART_VERSION})
 
 set(QT_MIN_VERSION "6.5.0")
-set(KF_MIN_VERSION "5.240.0")
+set(KF_MIN_VERSION "6.0.0")
 
 find_package(ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ECM_MODULE_PATH})
@@ -40,9 +40,10 @@ find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     XmlGui
 )
 
-ecm_set_disabled_deprecation_versions(QT 6.5.0
-    KF 5.240.0
-    )
+ecm_set_disabled_deprecation_versions(
+    QT 6.5
+    KF 6.0
+)
 
 add_subdirectory(src)
 
