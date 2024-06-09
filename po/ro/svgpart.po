@@ -30,20 +30,3 @@ msgstr "&Vizualizare"
 #, kde-format
 msgid "Main Toolbar"
 msgstr "Bara de unelte principală"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Sergiu Bivol"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "sergiu@cip.md"
-
-#~ msgid "SVG Part"
-#~ msgstr "Componentă SVG"
-
-#~ msgid "A KPart to display SVG images"
-#~ msgstr "O componentă pentru afișarea imaginilor SVG"
-
-#~ msgid "Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"
-#~ msgstr "Drept de autor 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"
