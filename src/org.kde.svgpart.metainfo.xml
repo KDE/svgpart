@@ -15,6 +15,7 @@
   <project_license>GPL-2.0+</project_license>
   <name>SVG Viewer KPart</name>
   <name xml:lang="ar">جزء ك عارض صور اس في جي</name>
+  <name xml:lang="be">Сродак прагляду SVG для KPart</name>
   <name xml:lang="bg">Визуализатор на SVG за KPart</name>
   <name xml:lang="ca">KPart del visualitzador de SVG</name>
   <name xml:lang="ca-valencia">La KPart del visor de SVG</name>
@@ -57,6 +58,7 @@
   <name xml:lang="zh-TW">SVG 檢視器 KPart</name>
   <summary>Rendered display of SVG files in KParts-using software</summary>
   <summary xml:lang="ar">يستعرض صور اس في جي SVG في التطبيقات التي تستخدم جزء ك</summary>
+  <summary xml:lang="be">Рэндэрынг файлаў SVG у праграмах, якія выкарыстоўваюць Kparts</summary>
   <summary xml:lang="bg">Визуализатор на файлове SVG за приложения, използващи KParts</summary>
   <summary xml:lang="ca">Mostra renderitzats els fitxers SVG en el programari que utilitza les KParts</summary>
   <summary xml:lang="ca-valencia">Mostra renderitzats els fitxers SVG en el programari que utilitza les KPart</summary>
@@ -100,6 +102,7 @@
   <description>
     <p>The SVG Viewer KPart allows KParts-using software to display SVG files in a rendered view.</p>
     <p xml:lang="ar">يمكن عارض صور اس في جي التطبيقات التي تستخدم جزء ك من تصيير وعرض ملفات اس في جي.</p>
+    <p xml:lang="be">Сродак прагляду SVG KPart дае магчымасць праграмнаму забеспячэнню, якое выкарыстоўвае KParts, паказваць файлы SVG.</p>
     <p xml:lang="bg">Визуализатор на SVG за KPart позволява приложения, използващи KParts да показват файлове SVG в режим на преглед.</p>
     <p xml:lang="ca">La KPart del visualitzador de SVG permet que el programari que utilitza les KParts, mostri els fitxers SVG en una vista renderitzada.</p>
     <p xml:lang="ca-valencia">La KPart del visor de SVG permet que el programari que utilitza les KPart, mostre els fitxers SVG en una vista renderitzada.</p>
