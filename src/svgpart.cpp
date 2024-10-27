@@ -170,7 +170,6 @@ void SvgPart::setExtendedRestoreArguments(qreal zoom)
     mRestoreZoom = zoom;
 }
 
-
 qreal SvgPart::zoom() const
 {
     return mView->zoom();
