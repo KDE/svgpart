@@ -30,20 +30,3 @@ msgstr "&Görünüm"
 #, kde-format
 msgid "Main Toolbar"
 msgstr "Ana Araç Çubuğu"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Serdar Soytetir"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "tulliana@gmail.com"
-
-#~ msgid "SVG Part"
-#~ msgstr "SVG Parçacığı"
-
-#~ msgid "A KPart to display SVG images"
-#~ msgstr "SVG resimleri göstermek için bir KPart"
-
-#~ msgid "Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"
-#~ msgstr "Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"
