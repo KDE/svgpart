@@ -1,15 +1,16 @@
-# translation of svgpart.po to Spanish
-# Copyright (C) YEAR This_file_is_part_of_KDE
-# This file is distributed under the same license as the PACKAGE package.
+# Spanish translations for svgpart.po package.
+# Copyright (C) 2007-2025 This file is copyright:
+# This file is distributed under the same license as the svgpart package.
 #
-# Jaime Robles <jaime@kde.org>, 2007.
+# SPDX-FileCopyrightText: 2007 Jaime Robles <jaime@kde.org>
+# SPDX-FileCopyrightText: 2025 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: svgpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-05-17 00:18+0000\n"
-"PO-Revision-Date: 2007-12-30 18:15+0100\n"
-"Last-Translator: Jaime Robles <jaime@kde.org>\n"
+"PO-Revision-Date: 2025-06-04 20:12+0100\n"
+"Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -29,20 +30,3 @@ msgstr "&Ver"
 #, kde-format
 msgid "Main Toolbar"
 msgstr "Barra de herramientas principal"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Eloy Cuadra"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "ecuadra@eloihr.net"
-
-#~ msgid "SVG Part"
-#~ msgstr "Parte SVG"
-
-#~ msgid "A KPart to display SVG images"
-#~ msgstr "Una KPart para mostrar imágenes SVG"
-
-#~ msgid "Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"
-#~ msgstr "Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"
