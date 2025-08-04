@@ -27,7 +27,7 @@ msgstr "&عرض"
 #: svgpart.rc:13
 #, kde-format
 msgid "Main Toolbar"
-msgstr "قائمة الأدوات الرئيسية"
+msgstr "قائمة الأدوات الرئيسة"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"
