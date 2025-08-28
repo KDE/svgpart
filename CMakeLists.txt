@@ -41,8 +41,8 @@ find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS
 )
 
 ecm_set_disabled_deprecation_versions(
-    QT 6.9.0
-    KF 6.13
+    QT 6.10.0
+    KF 6.17.0
 )
 
 add_subdirectory(src)
