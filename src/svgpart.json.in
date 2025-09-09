@@ -39,7 +39,6 @@
                 "Name[ta]": "ஆரிலியன் காட்டியூ",
                 "Name[tr]": "Aurélien Gâteau",
                 "Name[uk]": "Aurélien Gâteau",
-                "Name[x-test]": "xxAurélien Gâteauxx",
                 "Name[zh_CN]": "Aurélien Gâteau",
                 "Name[zh_TW]": "Aurélien Gâteau"
             }
@@ -80,7 +79,6 @@
         "Copyright[ta]": "பதிப்புரிமை 2007 ஆரிலியன் காட்டியூ",
         "Copyright[tr]": "© 2007 Aurélien Gâteau",
         "Copyright[uk]": "© Aurélien Gâteau, 2007",
-        "Copyright[x-test]": "xxCopyright 2007 Aurélien Gâteauxx",
         "Copyright[zh_CN]": "Copyright 2007 Aurélien Gâteau",
         "Copyright[zh_TW]": "Copyright 2007 Aurélien Gâteau",
         "Description": "A KPart to display SVG images",
@@ -119,7 +117,6 @@
         "Description[ta]": "SVG படங்களைக் காட்டும் கே.டீ.யீ-யின் கூறு",
         "Description[tr]": "SVG görsellerini görüntülemek için bir KPart",
         "Description[uk]": "KPart для показу зображень SVG",
-        "Description[x-test]": "xxA KPart to display SVG imagesxx",
         "Description[zh_CN]": "用于显示 SVG 图像的 KPart 组件",
         "Description[zh_TW]": "顯示 SVG 影像用的 KPart",
         "Icon": "image-svg+xml",
@@ -193,7 +190,6 @@
         "Name[ug]": "Svg Part",
         "Name[uk]": "Компонент Svg",
         "Name[vi]": "Thành phần SVG",
-        "Name[x-test]": "xxSvg Partxx",
         "Name[zh_CN]": "SVG 组件",
         "Name[zh_TW]": "Svg 部件",
         "ServiceTypes": [
