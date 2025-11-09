@@ -14,8 +14,8 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf6-trunk/messages/svgpart/svgpart.pot\n"
-"X-Crowdin-File-ID: 45145\n"
+"X-Crowdin-File: /kf6-stable/messages/svgpart/svgpart.pot\n"
+"X-Crowdin-File-ID: 52956\n"
 
 #. i18n: ectx: Menu (view)
 #: svgpart.rc:4
