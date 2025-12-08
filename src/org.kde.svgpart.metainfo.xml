@@ -35,6 +35,7 @@
   <name xml:lang="ia">KPart Visor de SVG</name>
   <name xml:lang="id">SVG Viewer KPart</name>
   <name xml:lang="ie">Un KPart de visor SVG</name>
+  <name xml:lang="is">SVG-skoðari KPart</name>
   <name xml:lang="it">Visore KPart SVG</name>
   <name xml:lang="ka">SVG-ის KPart-ში ნახვა</name>
   <name xml:lang="ko">SVG 뷰어 KPart</name>
@@ -77,6 +78,7 @@
   <summary xml:lang="ia">Schermo rendite de files SVG in software usante KParts</summary>
   <summary xml:lang="id">Tampilan ter-render pada file-file SVG dalam perangkat lunak menggunakan KPart</summary>
   <summary xml:lang="ie">Monstrar files SVG in programmas quel usa KParts</summary>
+  <summary xml:lang="is">Myndgerir SVG-skrár með hugbúnaði til birtingar í KParts</summary>
   <summary xml:lang="it">Visualizzazione renderizzata dei file SVG nel software che utilizza KParts</summary>
   <summary xml:lang="ka">SVG ფაილების რენდერი KPart-ის გამომყენებელი პროგრამით</summary>
   <summary xml:lang="ko">KParts를 사용하는 프로그램에서 SVG 파일을 렌더링하여 표시합니다</summary>
