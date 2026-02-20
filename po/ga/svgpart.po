@@ -28,20 +28,3 @@ msgstr "&Amharc"
 #, kde-format
 msgid "Main Toolbar"
 msgstr "Príomhbharra Uirlisí"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Kevin Scannell"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "kscanne@gmail.com"
-
-#~ msgid "SVG Part"
-#~ msgstr "Comhpháirt SVG"
-
-#~ msgid "A KPart to display SVG images"
-#~ msgstr "KPart a thaispeánann íomhánna SVG"
-
-#~ msgid "Copyright 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"
-#~ msgstr "© 2007, Aurélien Gâteau <aurelien.gateau@free.fr>"
