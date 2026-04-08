@@ -14,7 +14,7 @@
 #include <KLocalizedString>
 #include <KPluginFactory>
 #include <KPluginMetaData>
-#include <KStandardAction>
+#include <KStandardActions>
 // Qt
 #include <QGraphicsScene>
 #include <QGraphicsSvgItem>
@@ -35,9 +35,9 @@ SvgPart::SvgPart(QWidget *parentWidget, QObject *parent, const KPluginMetaData &
     mView = new SvgView(mScene, parentWidget);
     setWidget(mView);
 
-    KStandardAction::actualSize(mView, &SvgView::zoomActualSize, actionCollection());
-    KStandardAction::zoomIn(mView, &SvgView::zoomIn, actionCollection());
-    KStandardAction::zoomOut(mView, &SvgView::zoomOut, actionCollection());
+    KStandardActions::actualSize(mView, &SvgView::zoomActualSize, actionCollection());
+    KStandardActions::zoomIn(mView, &SvgView::zoomIn, actionCollection());
+    KStandardActions::zoomOut(mView, &SvgView::zoomOut, actionCollection());
     setXMLFile(QStringLiteral("svgpart.rc"));
 }
 

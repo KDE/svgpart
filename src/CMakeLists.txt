@@ -16,6 +16,7 @@ target_link_libraries(svgpart
     KF6::CoreAddons
     KF6::Parts
     KF6::I18n
+    KF6::ConfigGui
     Qt6::Widgets
     Qt6::Svg
     Qt6::SvgWidgets
