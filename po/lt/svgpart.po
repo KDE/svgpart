@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: svgpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:50+0000\n"
-"PO-Revision-Date: 2010-07-04 20:39+0300\n"
+"PO-Revision-Date: 2026-05-01 14:11+0300\n"
 "Last-Translator: Andrius Štikonas <andrius@stikonas.eu>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -16,18 +16,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
+"X-Generator: Poedit 3.8\n"
 
 #. i18n: ectx: Menu (view)
 #: svgpart.rc:4
 #, kde-format
 msgid "&View"
-msgstr "&Rodymas"
+msgstr "&Rodinys"
 
 #. i18n: ectx: ToolBar (mainToolBar)
 #: svgpart.rc:13
 #, kde-format
 msgid "Main Toolbar"
-msgstr "Pagrindinė įrankinė"
+msgstr "Pagrindinė įrankių juosta"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"
