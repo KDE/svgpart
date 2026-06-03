@@ -40,6 +40,7 @@
                 "Name[sv]": "Aurélien Gâteau",
                 "Name[ta]": "ஆரிலியன் காட்டியூ",
                 "Name[tr]": "Aurélien Gâteau",
+                "Name[ug]": "Aurélien Gâteau",
                 "Name[uk]": "Aurélien Gâteau",
                 "Name[zh_CN]": "Aurélien Gâteau",
                 "Name[zh_TW]": "Aurélien Gâteau"
@@ -193,7 +194,7 @@
         "Name[ta]": "Svg கூறு",
         "Name[th]": "ส่วนจัดการ Svg",
         "Name[tr]": "SVGPart",
-        "Name[ug]": "Svg Part",
+        "Name[ug]": "Svg بۆلىكى",
         "Name[uk]": "Компонент Svg",
         "Name[vi]": "Thành phần SVG",
         "Name[zh_CN]": "SVG 组件",
